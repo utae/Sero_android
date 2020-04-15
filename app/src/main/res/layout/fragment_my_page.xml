@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="24dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#00909d">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:id="@+id/myName"/>
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/btn_setting"
+            android:id="@+id/settingButton"/>
+
+    </FrameLayout>
+
+    <in.srain.cube.views.GridViewWithHeaderAndFooter
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:numColumns="3"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:id="@+id/myVideoList"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee">
+
+        <ImageView
+            android:layout_width="178dp"
+            android:layout_height="230dp"
+            android:background="@null"
+            android:layout_gravity="center_horizontal|bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_person_video_list_empty"/>
+
+    </FrameLayout>
+
+</LinearLayout>

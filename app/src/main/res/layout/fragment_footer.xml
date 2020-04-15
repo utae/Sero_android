@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:background="#0fb0be"
+        android:id="@+id/footerButtonsContainer">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:src="@drawable/btn_footer_like_false"
+                android:id="@+id/footerLikeButton"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:src="@drawable/btn_footer_share_false"
+                android:id="@+id/footerShareButton"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:src="@drawable/btn_footer_report_false"
+                android:id="@+id/footerReportButton"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#f5f5f5"
+        android:gravity="center_vertical"
+        android:id="@+id/footerLikeInfoContainer">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="12dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_footer_like"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:textSize="12sp"
+            android:textColor="#cc000000"
+            android:id="@+id/footerLikeCounter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="people like this"
+            android:textSize="13sp"
+            android:textColor="#cc000000"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f5f5f5"
+        android:id="@+id/footerCommentListContainer">
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/footerCommentListRefresher"
+
+            cube_ptr:ptr_resistance="1.7"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="0.6"
+            cube_ptr:ptr_duration_to_close="300"
+            cube_ptr:ptr_duration_to_close_header="2000"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false" >
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:id="@+id/footerCommentList"/>
+
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="140dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/img_footer_comment_list_empty"
+            android:id="@+id/footerCommentListEmptyView"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical"
+        android:id="@+id/commentEditContainer">
+
+        <net.videofactory.new_audi.common.BackPressEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:inputType="text"
+            android:background="@null"
+            android:id="@+id/footerEditText"/>
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_footer_send"
+            android:id="@+id/footerSendButton"/>
+
+    </LinearLayout>
+
+</LinearLayout>

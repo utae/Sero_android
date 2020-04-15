@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/loginBackgroundVideoView"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_login_logo"
+            android:visibility="gone"
+            android:id="@+id/logoView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|center_horizontal"
+            android:id="@+id/loginBtnContainer"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="By signing up, you agree to "
+                    android:textSize="12sp"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/terms"
+                    android:textSize="12sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:id="@+id/loginTerms"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text=" \u0026 "
+                    android:textSize="12sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/privacy_policy"
+                    android:textSize="12sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:id="@+id/loginPrivacyPolicy"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="312dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bgc_login_facebook"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:id="@+id/loginFbButton">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_login_fb"
+                    android:scaleType="fitXY"
+                    android:background="@null"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="38dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connect With Facebook"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="312dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bgc_login_email"
+                android:layout_gravity="bottom|center_horizontal"
+                android:text="Sign up"
+                android:textSize="14sp"
+                android:textColor="#00909d"
+                android:id="@+id/signupEmailButton"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal"
+                android:background="@null"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:id="@+id/loginEmailButton">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account? "
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="63dp"
+                    android:layout_height="22dp"
+                    android:gravity="center"
+                    android:background="#008f9c"
+                    android:text="Sign In"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="10dp"
+        android:background="#ffffff"
+        android:descendantFocusability="blocksDescendants">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <net.videofactory.new_audi.custom_view.loading_image_view.CircleLoadingImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    app:civ_border_color="#4d000000"
+                    app:civ_border_width="0.6dp"
+                    android:id="@+id/cardProfile"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="214dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:textColor="#000000"
+                        android:id="@+id/cardTitle"/>
+
+                    <View
+                        android:layout_width="142dp"
+                        android:layout_height="0.6dp"
+                        android:background="#4d000000"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:layout_gravity="right"
+                android:src="@drawable/btn_home_card_delete"
+                android:id="@+id/cardDelBtn"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/cardVideoThumbnailContainer">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="9dp">
+
+                <net.videofactory.new_audi.custom_view.loading_image_view.RatioLoadingImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/cardVideoThumbnail1"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="6dp">
+
+                <net.videofactory.new_audi.custom_view.loading_image_view.RatioLoadingImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/cardVideoThumbnail2"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="6dp"
+                android:paddingRight="3dp">
+
+                <net.videofactory.new_audi.custom_view.loading_image_view.RatioLoadingImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/cardVideoThumbnail3"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="9dp">
+
+                <net.videofactory.new_audi.custom_view.loading_image_view.RatioLoadingImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/cardVideoThumbnail4"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

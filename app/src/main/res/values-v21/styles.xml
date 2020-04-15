@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="StatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:hardwareAccelerated">true</item>
+        <item name="android:statusBarColor">#00747e</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

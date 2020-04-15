@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="10dp">
+
+    <net.videofactory.new_audi.custom_view.loading_image_view.CircleLoadingImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:layout_marginRight="12dp"
+        app:civ_border_color="#1a000000"
+        app:civ_border_width="0.6dp"
+        android:id="@+id/alarmProfile"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:maxLines="1"
+                android:layout_marginRight="8dp"
+                android:id="@+id/alarmName"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#cc000000"
+                android:maxLines="1"
+                android:id="@+id/alarmFirstContents"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#cc000000"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:id="@+id/alarmSecondContents"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#99000000"
+            android:maxLines="1"
+            android:id="@+id/alarmTime"/>
+
+    </LinearLayout>
+
+</LinearLayout>

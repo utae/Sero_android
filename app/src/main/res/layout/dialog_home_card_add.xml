@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:layout_width="328dp"
+        android:layout_height="56dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose deck to add on main"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
+        
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/btn_dialog_home_card_add_close"
+            android:id="@+id/homeCardAddDialogClose"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#80000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingLeft="24dp"
+        android:text="Channel"
+        android:textSize="18sp"
+        android:textColor="#828383"
+        android:gravity="center_vertical"
+        android:id="@+id/homeCardAddDialogChannel"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#80000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingLeft="24dp"
+        android:text="Hashtag"
+        android:textSize="18sp"
+        android:textColor="#828383"
+        android:gravity="center_vertical"
+        android:id="@+id/homeCardAddDialogTag"/>
+
+</LinearLayout>

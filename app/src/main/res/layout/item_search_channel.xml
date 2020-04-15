@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.videofactory.new_audi.custom_view.loading_image_view.CircleLoadingImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="68dp"
+    android:layout_height="68dp"
+    android:background="@null"
+    app:civ_border_color="#1a000000"
+    app:civ_border_width="0.6dp"
+    android:id="@+id/searchChannelListProfileView" />

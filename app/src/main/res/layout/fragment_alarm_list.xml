@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/alarmListRefresher"
+
+        cube_ptr:ptr_resistance="1.7"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="0.6"
+        cube_ptr:ptr_duration_to_close="300"
+        cube_ptr:ptr_duration_to_close_header="2000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false" >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:divider="#80000000"
+            android:dividerHeight="0.6dp"
+            android:id="@+id/alarmList"/>
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:layout_gravity="bottom|center_horizontal"
+        android:src="@drawable/img_alarm_empty"
+        android:visibility="gone"
+        android:id="@+id/alarmListEmptyView"/>
+
+</FrameLayout>

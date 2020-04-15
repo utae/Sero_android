@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="current_time">00:00</string>
+    <string name="end_time">00:00</string>
+    <string name="play_button">play button</string>
+
+    <string name="app_name">New_Audi</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="offline">Please check network.</string>
+
+    <string name="sampleText">This song was filmed near Union Square. What a nice song. There is amazing story behind this. I wish them well and I am looking forward to see these guys around with beautiful songs..</string>
+
+    <string name="app_id">1581997628766301</string>
+
+    <string name="fb_login_protocol_scheme">fb1581997628766301</string>
+
+    <string name="terms"><u>Terms</u></string>
+
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>

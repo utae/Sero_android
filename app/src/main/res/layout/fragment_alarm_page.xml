@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#00909d"
+        android:gravity="center"
+        android:text="Activity"
+        android:textSize="17sp"
+        android:textColor="#ffffff"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#ffffff" />
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/alarmViewPagerTab"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#00909d"
+        app:stl_customTabTextLayoutId="@layout/tab_audi"
+        app:stl_customTabTextViewId="@+id/tabTextView"
+        app:stl_indicatorColor="#ff14b9c8"
+        app:stl_indicatorInterpolation="linear"
+        app:stl_indicatorThickness="2dp"
+        app:stl_indicatorWidth="auto"
+        app:stl_underlineColor="#80000000"
+        app:stl_underlineThickness="2dp"
+        app:stl_dividerThickness="0dp"
+        app:stl_defaultTabTextAllCaps="false"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/alarmViewPager"
+        android:background="#ffffff"/>
+
+</LinearLayout>

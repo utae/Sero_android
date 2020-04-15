@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<net.videofactory.new_audi.custom_view.range_bar.RangeBar-->
+        <!--xmlns:custom="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="17dp"-->
+        <!--custom:tickStart="0"-->
+        <!--custom:tickInterval="0.1"-->
+        <!--custom:tickEnd="100"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--custom:connectingLineColor="#fff176"-->
+        <!--custom:connectingLineWeight="17dp"-->
+        <!--android:id="@+id/clipperRangeBar" />-->
+
+</FrameLayout>

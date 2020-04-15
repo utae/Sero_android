@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="10dp">
+
+    <net.videofactory.new_audi.custom_view.loading_image_view.CircleLoadingImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginRight="12dp"
+        android:background="@null"
+        app:civ_border_color="#1a000000"
+        app:civ_border_width="0.6dp"
+        android:id="@+id/commentProfile"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:id="@+id/commentNickName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:id="@+id/commentContent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:textSize="12sp"
+                android:textColor="#99000000"
+                android:id="@+id/commentTime"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="like"
+                android:textSize="12sp"
+                android:textColor="#257dad"
+                android:id="@+id/commentLikeButton"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:textSize="12sp"
+                android:textColor="#257dad"
+                android:id="@+id/commentLikeCount"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   delete   "
+                android:textSize="12sp"
+                android:textColor="#257dad"
+                android:visibility="gone"
+                android:id="@+id/commentDelButton"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

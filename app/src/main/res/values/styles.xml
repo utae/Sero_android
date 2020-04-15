@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="NoStatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:hardwareAccelerated">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="StatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:hardwareAccelerated">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

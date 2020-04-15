@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="selected_menu">#26000000</color>
+    <color name="my_video_pressed">#66fff176</color>
+    <color name="my_video">#00000000</color>
+    <color name="toggle_button_text_default">#80000000</color>
+    <color name="toggle_button_text_selected">#ffffff</color>
+    <color name="channel_block">#dd2c00</color>
+    <color name="channel_unblock">#157efb</color>
+</resources>

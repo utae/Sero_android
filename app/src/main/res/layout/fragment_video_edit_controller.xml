@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:background="#33000000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPanelContainer">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="129dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            android:layout_gravity="top|right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="14dp"/>
+
+        <ImageButton
+            android:id="@+id/videoEditPlayButton"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_marginBottom="44dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:scaleType="fitXY"
+            android:background="@null"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="bottom|center_horizontal">
+
+            <ImageButton
+                android:id="@+id/videoEditPrevButton"
+                android:layout_width="78dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:id="@+id/videoEditNextButton"
+                android:layout_width="78dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/videoEditCloseButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/btn_camera_clipper_close"
+            android:layout_gravity="bottom|right"
+            android:scaleType="fitXY"
+            android:background="@null"/>
+
+    </FrameLayout>
+
+</LinearLayout>

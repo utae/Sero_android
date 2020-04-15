@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:layout_width="328dp"
+        android:layout_height="56dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/homeCardAddDialogSearchTitle"/>
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/btn_dialog_home_card_add_close"
+            android:id="@+id/homeCardAddDialogSearchClose"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#80000000" />
+
+    <TextView
+        android:layout_width="328dp"
+        android:layout_height="32dp"
+        android:background="#eeeeee"
+        android:textSize="16.5sp"
+        android:textColor="#80000000"
+        android:gravity="center"
+        android:id="@+id/homeCardAddDialogSearchComment"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#80000000" />
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="12dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_home_card_add_dialog_search"/>
+
+        <MultiAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:layout_marginRight="16dp"
+            android:hint="Search"
+            android:textColorHint="#aaaaaa"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:id="@+id/homeCardAddDialogSearchEditText"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#80000000" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="364dp"
+        android:background="@null"
+        android:divider="#4D000000"
+        android:dividerHeight="0.6dp"
+        android:id="@+id/homeCardAddDialogSearchList"/>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#ffffff"
+    android:layout_marginTop="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:background="#00909d"
+        android:text="Upload"
+        android:textSize="17sp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center_vertical"
+        android:text="Shoot Video"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+
+    <ImageButton
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_upload_shoot_video"
+        android:id="@+id/uploadHomeShootVideo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="54dp"
+        android:gravity="center_vertical"
+        android:text="Choose from Gallery"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+
+    <ImageButton
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_upload_choose_gallery"
+        android:id="@+id/uploadHomeGallery"/>
+
+</LinearLayout>

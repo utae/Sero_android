@@ -1,0 +1,98 @@
+<net.videofactory.new_audi.custom_view.audi_layout.AudiLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:alwaysDrawnWithCache="true"
+    android:id="@+id/audiLayoutView">
+
+    <!-- menuPage가 들어가는 부분-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/menuPageContainer">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:background="#00909d"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/menuContentContainer" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#80000000" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="#ffffff"
+            android:id="@+id/mainDragger">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="28dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:src="@drawable/btn_dragger"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#80000000" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/menuBarContainer" />
+
+    </LinearLayout>
+
+    <!-- ViewPager(동영상)이 들어가는 부분 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/main">
+
+        <!-- viewPager Container -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/videoViewPagerContainer">
+
+            <!-- videoView가 들어가는 viewPager -->
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/videoViewPager"
+                android:background="@null"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- footer Container -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:id="@+id/footerContainer"
+        android:background="#ff000000" />
+
+</net.videofactory.new_audi.custom_view.audi_layout.AudiLayout>

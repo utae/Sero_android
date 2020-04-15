@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "348655855870",
+    "firebase_url": "https://fir-sero.firebaseio.com",
+    "project_id": "firebase-sero",
+    "storage_bucket": "firebase-sero.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348655855870:android:aa85b42446b9cd35",
+        "android_client_info": {
+          "package_name": "net.videofactory.new_audi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348655855870-23ntehuukjalp6oiljefh03rk7qupg6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.videofactory.new_audi",
+            "certificate_hash": "93054B4DC9CE7F10191B9BDC04EB576F0FC36E38"
+          }
+        },
+        {
+          "client_id": "348655855870-1cv3vq30093nfvo54knb2u8j10jm6red.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBypPhZ9y9FHcXV8raA-f4zwQCte0L2NvE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348655855870-1cv3vq30093nfvo54knb2u8j10jm6red.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "348655855870-7tvorehr4a9vj1hbkfonrlfk4biehmqa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "tv.sero"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

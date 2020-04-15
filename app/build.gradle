@@ -1,0 +1,117 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.22.0'
+    }
+}
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+
+    packagingOptions{
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META_INF/license.txt'
+        exclude 'META_INF/dependencies.txt'
+        exclude 'META_INF/LGPL2.1'
+    }
+
+    defaultConfig {
+        applicationId "net.videofactory.new_audi"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 3
+        versionName "1.0.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        preDexLibraries = false
+    }
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+    maven {
+        url "https://jitpack.io"
+    }
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+    maven {
+        url 'https://maven.fabric.io/public'
+    }
+}
+
+dependencies {
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    //butterknife
+    compile 'com.jakewharton:butterknife:7.0.1'
+    //texture video view
+    compile 'com.sprylab.android.texturevideoview:texturevideoview:1.0.2'
+    //animation
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.easing:library:1.0.1@aar'
+    compile 'com.daimajia.androidanimations:library:1.1.3@aar'
+    //pull to refresh
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    //sliding panel layout
+    compile 'com.sothree.slidinguppanel:library:3.2.0'
+    //camera
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.1.4'
+    //mp4 parser
+    compile 'com.googlecode.mp4parser:isoparser:1.1.7'
+    //grid view
+    compile 'com.etsy.android.grid:library:1.0.5'
+    //ffmpeg
+    compile 'com.github.hiteshsondhi88.libffmpeg:FFmpegAndroid:0.2.5'
+    //AWS
+    compile 'com.amazonaws:aws-android-sdk-core:2.2.8'
+    compile 'com.amazonaws:aws-android-sdk-cognito:2.2.8'
+    compile 'com.amazonaws:aws-android-sdk-s3:2.2.8'
+    compile 'com.amazonaws:aws-android-sdk-ddb:2.2.9'
+    //ragebar
+    compile 'com.appyvet:materialrangebar:1.3'
+    //circle image view
+    compile 'com.mikhaellopez:circularimageview:3.0.2'
+    //date picker
+    compile 'com.brucetoo.pickview:library:1.1.1'
+    //facebook
+    compile 'com.facebook.android:facebook-android-sdk:4.12.1'
+    //viewpager indicator
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.flyco.pageindicator:FlycoPageIndicator_Lib:1.0.0@aar'
+    //tablayout
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    //gridView with header
+    compile 'in.srain.cube:grid-view-with-header-footer:1.0.12'
+    //crashlytics
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+        transitive = true;
+    }
+    compile 'com.google.firebase:firebase-messaging:9.4.0'
+}
+
+apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'

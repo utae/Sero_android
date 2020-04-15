@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:layout_marginTop="24dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#00909d">
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_back_white"
+            android:id="@+id/editProfileBackButton"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Edit Profile"
+            android:textSize="17sp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="@null"
+            android:text="Save"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:id="@+id/editProfileSaveButton"/>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="center_horizontal">
+
+                <net.videofactory.new_audi.custom_view.loading_image_view.CircleLoadingImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:civ_border_color="#1a000000"
+                    app:civ_border_width="0.6dp"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:id="@+id/editProfileImg"/>
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="right|bottom"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_edit_profile_img"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:id="@+id/editProfileNickName"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#80000000" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:textSize="14sp"
+                android:textColor="#B3000000"
+                android:id="@+id/editProfileIntro"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#80000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/bg_form_edittext"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:hint="Name"
+                    android:textColorHint="#80000000"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:maxLines="1"
+                    android:inputType="textPersonName"
+                    android:id="@+id/editProfileName"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/bg_form_edittext"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:hint="Email"
+                    android:textColorHint="#80000000"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/editProfileEmail"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="3dp"
+                android:text="Gender"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:orientation="horizontal"
+                android:id="@+id/editProfileGenderRadioGroup">
+
+                <RadioButton
+                    android:background="@drawable/bg_toggle_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="16dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Male"
+                    android:textSize="15sp"
+                    android:textColor="@color/toggle_button_text"
+                    android:id="@+id/editProfileMailRadioButton"/>
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_toggle_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Female"
+                    android:textSize="15sp"
+                    android:textColor="@color/toggle_button_text"
+                    android:id="@+id/editProfileFemailRadioButton"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="3dp"
+                android:text="Birthday"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_toggle_button"
+                android:textSize="15sp"
+                android:textColor="@color/toggle_button_text"
+                android:id="@+id/editProfileBirthSelectButton"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

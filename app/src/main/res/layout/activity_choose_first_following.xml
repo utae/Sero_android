@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_choose_tag"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="Choose what interests you"
+            android:textSize="17sp"
+            android:textColor="#04e0f4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:gravity="center"
+            android:text="Select Hashtag \u0026 Channels"
+            android:textSize="19sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:gravity="center"
+            android:text="(Multiple Choice)"
+            android:textSize="19sp"
+            android:textColor="#ffffff"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:background="@drawable/bg_first_following_hashtag"
+                android:id="@+id/firstChooseTag1"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:background="@drawable/bg_first_following_hashtag"
+                android:id="@+id/firstChooseTag2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:background="@drawable/bg_first_following_hashtag"
+                android:id="@+id/firstChooseTag3"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:background="@drawable/bg_first_following_hashtag"
+                android:id="@+id/firstChooseTag4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <net.videofactory.new_audi.custom_view.loading_image_view.CircleLoadingImageView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@null"
+                        app:civ_border_color="#1a000000"
+                        app:civ_border_width="0.6dp"
+                        android:id="@+id/firstChooseChannelProfile1"/>
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@null"
+                        app:civ_border_color="#1a000000"
+                        app:civ_border_width="0.6dp"
+                        android:src="@drawable/btn_first_channel_checked"
+                        android:visibility="invisible"
+                        android:clickable="true"
+                        android:id="@+id/firstChooseChannelCheck1"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/firstChooseChannelName1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <net.videofactory.new_audi.custom_view.loading_image_view.CircleLoadingImageView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@null"
+                        app:civ_border_color="#1a000000"
+                        app:civ_border_width="0.6dp"
+                        android:id="@+id/firstChooseChannelProfile2"/>
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@null"
+                        app:civ_border_color="#1a000000"
+                        app:civ_border_width="0.6dp"
+                        android:src="@drawable/btn_first_channel_checked"
+                        android:visibility="invisible"
+                        android:clickable="true"
+                        android:id="@+id/firstChooseChannelCheck2"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/firstChooseChannelName2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <net.videofactory.new_audi.custom_view.loading_image_view.CircleLoadingImageView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@null"
+                        app:civ_border_color="#1a000000"
+                        app:civ_border_width="0.6dp"
+                        android:id="@+id/firstChooseChannelProfile3"/>
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@null"
+                        app:civ_border_color="#1a000000"
+                        app:civ_border_width="0.6dp"
+                        android:src="@drawable/btn_first_channel_checked"
+                        android:visibility="invisible"
+                        android:id="@+id/firstChooseChannelCheck3"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/firstChooseChannelName3"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <net.videofactory.new_audi.custom_view.loading_image_view.CircleLoadingImageView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@null"
+                        app:civ_border_color="#1a000000"
+                        app:civ_border_width="0.6dp"
+                        android:id="@+id/firstChooseChannelProfile4"/>
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@null"
+                        app:civ_border_color="#1a000000"
+                        app:civ_border_width="0.6dp"
+                        android:src="@drawable/btn_first_channel_checked"
+                        android:visibility="invisible"
+                        android:id="@+id/firstChooseChannelCheck4"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/firstChooseChannelName4"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="bottom"
+        android:background="#fb991b"
+        android:text="next"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:id="@+id/firstChooseNextButton"/>
+
+</FrameLayout>

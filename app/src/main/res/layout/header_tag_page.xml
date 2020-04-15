@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#ffffff"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="21sp"
+            android:textColor="#000000"
+            android:id="@+id/tagPageVideoCount"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Videos"
+            android:textSize="13sp"
+            android:textColor="#99000000"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="27dp"
+        android:background="#99000000"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:id="@+id/tagPageFollowerContainer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="21sp"
+            android:textColor="#000000"
+            android:id="@+id/tagPageFollowerCount"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Followers"
+            android:textSize="13sp"
+            android:textColor="#99000000"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="118dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_width="99dp"
+        android:layout_height="28dp"
+        android:text="FOLLOW"
+        android:textSize="13sp"
+        android:textColor="#aaaaaa"
+        android:background="@drawable/bg_follow_button"
+        android:id="@+id/tagPageFollowButton"/>
+
+</LinearLayout>

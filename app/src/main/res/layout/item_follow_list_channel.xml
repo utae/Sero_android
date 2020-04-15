@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingTop="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="8dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <net.videofactory.new_audi.custom_view.loading_image_view.CircleLoadingImageView
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginRight="12dp"
+        android:background="@null"
+        app:civ_border_color="#1a000000"
+        app:civ_border_width="0.6dp"
+        android:id="@+id/followListProfile"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:id="@+id/followListNickName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#99000000"
+            android:id="@+id/followListName"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/followListChannelFollowButtonContainer">
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:text="FOLLOWING"
+            android:textSize="12sp"
+            android:textColor="#aaaaaa"
+            android:background="#ffffff"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/followListChannelFollowButton"/>
+
+    </FrameLayout>
+
+</LinearLayout>
