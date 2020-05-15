@@ -15,3 +15,12 @@ Sero는
 * 영상 편집
 
 과 같은 기능들도 포함되어 있습니다.
+
+#Screenshot
+
+![login](./img/login.png)
+![home](./img/home.png)
+![search](./img/search.png)
+![video](./img/video.png)
+![comment](./img/comment.png)
+
