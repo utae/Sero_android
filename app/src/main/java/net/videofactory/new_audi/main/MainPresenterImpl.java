@@ -1,7 +1,7 @@
 package net.videofactory.new_audi.main;
 
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
@@ -20,7 +20,6 @@ import net.videofactory.new_audi.video.VideoViewFragment;
 import net.videofactory.new_audi.common.AudiGestureListener;
 import net.videofactory.new_audi.video.VideoInfo;
 import net.videofactory.new_audi.custom_view.audi_layout.AudiLayout;
-import net.videofactory.new_audi.custom_view.audi_video_view.AudiMediaController;
 import net.videofactory.new_audi.custom_view.audi_video_view.AudiVideoView;
 
 import java.util.ArrayList;

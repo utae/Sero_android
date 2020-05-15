@@ -1,14 +1,14 @@
 package net.videofactory.new_audi.common;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import net.videofactory.new_audi.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -16,7 +16,7 @@ import butterknife.ButterKnife;
  */
 public class OfflineActivity extends AppCompatActivity {
 
-    @Bind(R.id.reconnectButton)
+    @BindView(R.id.reconnectButton)
     Button reconnectButton;
     BackPressCloseSystem backPressCloseSystem;
 

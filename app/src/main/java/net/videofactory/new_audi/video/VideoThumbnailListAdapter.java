@@ -2,7 +2,7 @@ package net.videofactory.new_audi.video;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,7 +23,7 @@ import net.videofactory.new_audi.custom_view.loading_image_view.RatioLoadingImag
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -143,9 +143,9 @@ public class VideoThumbnailListAdapter extends BaseAdapter {
 
     static class ViewHolder {
 
-        @Bind(R.id.personVideoListThumbnail) RatioLoadingImageView thumbnail;
+        @BindView(R.id.personVideoListThumbnail) RatioLoadingImageView thumbnail;
 
-        @Bind(R.id.personVideoListDel) ImageButton delButton;
+        @BindView(R.id.personVideoListDel) ImageButton delButton;
 
         public ViewHolder(View view) {
             ButterKnife.bind(this, view);

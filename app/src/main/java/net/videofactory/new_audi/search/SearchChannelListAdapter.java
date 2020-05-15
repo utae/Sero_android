@@ -15,7 +15,7 @@ import net.videofactory.new_audi.custom_view.loading_image_view.LoadingImageView
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -80,7 +80,7 @@ public class SearchChannelListAdapter extends BaseAdapter {
 
     static class ViewHolder {
 
-        @Bind(R.id.searchChannelListProfileView) CircleLoadingImageView profile;
+        @BindView(R.id.searchChannelListProfileView) CircleLoadingImageView profile;
 
         public ViewHolder(View view) {
             ButterKnife.bind(this, view);

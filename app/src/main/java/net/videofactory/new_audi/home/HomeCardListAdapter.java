@@ -2,13 +2,12 @@ package net.videofactory.new_audi.home;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -23,12 +22,11 @@ import net.videofactory.new_audi.common.UserInfo;
 import net.videofactory.new_audi.common.Utilities;
 import net.videofactory.new_audi.custom_view.loading_image_view.CircleLoadingImageView;
 import net.videofactory.new_audi.custom_view.loading_image_view.LoadingDrawable;
-import net.videofactory.new_audi.custom_view.loading_image_view.LoadingImageView;
 import net.videofactory.new_audi.custom_view.loading_image_view.RatioLoadingImageView;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -170,21 +168,21 @@ public class HomeCardListAdapter extends BaseAdapter {
 
     static class ViewHolder {
 
-        @Bind(R.id.cardProfile) CircleLoadingImageView profile;
+        @BindView(R.id.cardProfile) CircleLoadingImageView profile;
 
-        @Bind(R.id.cardTitle) TextView title;
+        @BindView(R.id.cardTitle) TextView title;
 
-        @Bind(R.id.cardDelBtn) ImageButton delBtn;
+        @BindView(R.id.cardDelBtn) ImageButton delBtn;
 
-        @Bind(R.id.cardVideoThumbnail1) RatioLoadingImageView thumbnail1;
+        @BindView(R.id.cardVideoThumbnail1) RatioLoadingImageView thumbnail1;
 
-        @Bind(R.id.cardVideoThumbnail2) RatioLoadingImageView thumbnail2;
+        @BindView(R.id.cardVideoThumbnail2) RatioLoadingImageView thumbnail2;
 
-        @Bind(R.id.cardVideoThumbnail3) RatioLoadingImageView thumbnail3;
+        @BindView(R.id.cardVideoThumbnail3) RatioLoadingImageView thumbnail3;
 
-        @Bind(R.id.cardVideoThumbnail4) RatioLoadingImageView thumbnail4;
+        @BindView(R.id.cardVideoThumbnail4) RatioLoadingImageView thumbnail4;
 
-        @Bind(R.id.cardVideoThumbnailContainer) LinearLayout thumbnailContainer;
+        @BindView(R.id.cardVideoThumbnailContainer) LinearLayout thumbnailContainer;
 
         public ViewHolder(View view) {
             ButterKnife.bind(this, view);

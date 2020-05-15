@@ -2,7 +2,7 @@ package net.videofactory.new_audi.channel_tag;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -33,7 +33,7 @@ import net.videofactory.new_audi.custom_view.loading_image_view.LoadingDrawable;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import in.srain.cube.views.GridViewWithHeaderAndFooter;
 
@@ -46,10 +46,10 @@ public class ChannelPageFragment extends RefreshFragment {
     private boolean follow;
     private boolean block;
 
-    @Bind(R.id.channelPageTitle) TextView title;
-    @Bind(R.id.channelPageVideoList) GridViewWithHeaderAndFooter videoList;
-    @Bind(R.id.channelPageBackButton) ImageButton backButton;
-    @Bind(R.id.channelShowMoreButton) ImageButton showMoreButton;
+    @BindView(R.id.channelPageTitle) TextView title;
+    @BindView(R.id.channelPageVideoList) GridViewWithHeaderAndFooter videoList;
+    @BindView(R.id.channelPageBackButton) ImageButton backButton;
+    @BindView(R.id.channelShowMoreButton) ImageButton showMoreButton;
 
     private HeaderHolder headerHolder;
     private ArrayList<VideoInfo> videoInfoList;
@@ -330,12 +330,12 @@ public class ChannelPageFragment extends RefreshFragment {
 
     static class HeaderHolder{
 
-        @Bind(R.id.channelPageProfile) CircleLoadingImageView profile;
-        @Bind(R.id.channelPageVideoCount) TextView videoCount;
-        @Bind(R.id.channelPageFollowerCount) TextView followerCount;
-        @Bind(R.id.channelPageName) TextView name;
-        @Bind(R.id.channelPageFollowButton) Button followButton;
-        @Bind(R.id.channelPageIntro) TextView intro;
+        @BindView(R.id.channelPageProfile) CircleLoadingImageView profile;
+        @BindView(R.id.channelPageVideoCount) TextView videoCount;
+        @BindView(R.id.channelPageFollowerCount) TextView followerCount;
+        @BindView(R.id.channelPageName) TextView name;
+        @BindView(R.id.channelPageFollowButton) Button followButton;
+        @BindView(R.id.channelPageIntro) TextView intro;
 
         public HeaderHolder(View view) {
             ButterKnife.bind(this, view);

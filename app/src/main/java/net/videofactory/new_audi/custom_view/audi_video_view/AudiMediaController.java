@@ -30,7 +30,7 @@ import java.lang.ref.WeakReference;
 import java.util.Formatter;
 import java.util.Locale;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -510,18 +510,18 @@ public class AudiMediaController extends FrameLayout {
     }
 
     static class ViewHolder{
-        @Bind(R.id.mediaControllerProfile) CircleLoadingImageView profile;
-        @Bind(R.id.mediaControllerIntro) TextView intro;
-        @Bind(R.id.mediaControllerNickName) TextView nickName;
-        @Bind(R.id.mediaControllerDate) TextView date;
-        @Bind(R.id.mediaControllerLikeCount) TextView likeCount;
-        @Bind(R.id.mediaControllerCommentCount) TextView commentCount;
-        @Bind(R.id.mediaControllerStartPauseButton) ImageButton startPauseButton;
-        @Bind(R.id.mediaControllerSeekBar) SeekBar seekBar;
-        @Bind(R.id.mediaControllerListButton) ImageButton listButton;
-        @Bind(R.id.mediaControllerCurTime) TextView curTime;
-        @Bind(R.id.mediaControllerEndTime) TextView endTime;
-        @Bind(R.id.mediaControllerViewCount) TextView viewCount;
+        @BindView(R.id.mediaControllerProfile) CircleLoadingImageView profile;
+        @BindView(R.id.mediaControllerIntro) TextView intro;
+        @BindView(R.id.mediaControllerNickName) TextView nickName;
+        @BindView(R.id.mediaControllerDate) TextView date;
+        @BindView(R.id.mediaControllerLikeCount) TextView likeCount;
+        @BindView(R.id.mediaControllerCommentCount) TextView commentCount;
+        @BindView(R.id.mediaControllerStartPauseButton) ImageButton startPauseButton;
+        @BindView(R.id.mediaControllerSeekBar) SeekBar seekBar;
+        @BindView(R.id.mediaControllerListButton) ImageButton listButton;
+        @BindView(R.id.mediaControllerCurTime) TextView curTime;
+        @BindView(R.id.mediaControllerEndTime) TextView endTime;
+        @BindView(R.id.mediaControllerViewCount) TextView viewCount;
 
         public ViewHolder(View view) {
             ButterKnife.bind(this, view);

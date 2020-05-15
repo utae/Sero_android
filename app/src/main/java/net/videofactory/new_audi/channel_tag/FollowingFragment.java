@@ -1,8 +1,8 @@
 package net.videofactory.new_audi.channel_tag;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +14,7 @@ import net.videofactory.new_audi.R;
 import net.videofactory.new_audi.audi_fragment_manager.RefreshFragment;
 import net.videofactory.new_audi.main.OnBackButtonClickListener;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -24,9 +24,9 @@ public class FollowingFragment extends RefreshFragment {
 
     private FollowingPageAdapter followingPageAdapter;
 
-    @Bind(R.id.followingViewPager) ViewPager viewPager;
-    @Bind(R.id.followingViewPagerTab) SmartTabLayout viewPagerTab;
-    @Bind(R.id.followingBackButton) ImageButton backButton;
+    @BindView(R.id.followingViewPager) ViewPager viewPager;
+    @BindView(R.id.followingViewPagerTab) SmartTabLayout viewPagerTab;
+    @BindView(R.id.followingBackButton) ImageButton backButton;
 
     private OnBackButtonClickListener onBackButtonClickListener;
     private OnFollowListItemClickListener onFollowListItemClickListener;

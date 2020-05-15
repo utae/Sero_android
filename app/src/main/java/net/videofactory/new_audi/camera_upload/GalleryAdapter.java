@@ -16,7 +16,7 @@ import net.videofactory.new_audi.R;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -99,7 +99,7 @@ public class GalleryAdapter extends BaseAdapter {
 
     static class ViewHolder {
 
-        @Bind(R.id.videoThumbnail) DynamicHeightImageView videoThumbnail;
+        @BindView(R.id.videoThumbnail) DynamicHeightImageView videoThumbnail;
 
         public ViewHolder(View view) {
             ButterKnife.bind(this, view);

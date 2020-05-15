@@ -1,8 +1,8 @@
 package net.videofactory.new_audi.alarm;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +12,7 @@ import com.ogaclejapan.smarttablayout.SmartTabLayout;
 import net.videofactory.new_audi.R;
 import net.videofactory.new_audi.audi_fragment_manager.RefreshFragment;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -22,8 +22,8 @@ public class AlarmPageFragment extends RefreshFragment {
 
     private AlarmPagerAdapter alarmPagerAdapter;
 
-    @Bind(R.id.alarmViewPager) ViewPager viewPager;
-    @Bind(R.id.alarmViewPagerTab) SmartTabLayout viewPagerTab;
+    @BindView(R.id.alarmViewPager) ViewPager viewPager;
+    @BindView(R.id.alarmViewPagerTab) SmartTabLayout viewPagerTab;
 
     private AlarmListFragment.AlarmListListener alarmListListener;
 

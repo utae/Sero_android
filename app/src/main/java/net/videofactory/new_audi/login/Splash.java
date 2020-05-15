@@ -5,10 +5,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.WindowManager;
 import android.widget.Toast;
 
@@ -20,7 +20,6 @@ import net.videofactory.new_audi.R;
 import net.videofactory.new_audi.common.Network;
 import net.videofactory.new_audi.common.ServerCommunicator;
 import net.videofactory.new_audi.common.UserInfo;
-import net.videofactory.new_audi.common.Utilities;
 import net.videofactory.new_audi.main.MainActivity;
 
 /**

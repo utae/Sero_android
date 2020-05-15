@@ -30,7 +30,8 @@
 
         <activity
             android:name=".login.Splash"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,7 +42,8 @@
 
         <activity
             android:name=".login.LoginHomeActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
 
         <activity
             android:name="com.facebook.FacebookActivity"
@@ -68,37 +70,43 @@
             android:name=".login.SignupFormActivity"
             android:screenOrientation="portrait"
             android:theme="@style/StatusBar"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
 
         <activity
             android:name=".login.LoginFormActivity"
             android:screenOrientation="portrait"
             android:theme="@style/StatusBar"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
 
         <activity
             android:name=".login.FbSignupFormActivity"
             android:screenOrientation="portrait"
             android:theme="@style/StatusBar"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
 
         <activity
             android:name=".login.FindPasswordActivity"
             android:screenOrientation="portrait"
             android:theme="@style/StatusBar"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
 
         <activity
             android:name=".login.ChooseFirstFollowingActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/StatusBar" />
+            android:theme="@style/StatusBar"
+            tools:ignore="LockedOrientationActivity" />
 
 
         <activity
             android:name=".main.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/StatusBar"
-            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity">
 
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN" />-->
@@ -119,11 +127,13 @@
 
         <activity
             android:name=".common.OfflineActivity"
-                  android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
 
         <activity
             android:name=".camera_upload.CameraActivity"
-                  android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
 
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN" />-->
@@ -132,22 +142,28 @@
 
         </activity>
 
-        <activity android:name=".camera_upload.GalleryActivity"
-                  android:screenOrientation="portrait"
-                  android:theme="@style/StatusBar"/>
+        <activity
+            android:name=".camera_upload.GalleryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBar"
+            tools:ignore="LockedOrientationActivity" />
 
-        <activity android:name=".camera_upload.UploadFormActivity"
-                  android:screenOrientation="portrait"
-                  android:theme="@style/StatusBar"/>
+        <activity
+            android:name=".camera_upload.UploadFormActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBar"
+            tools:ignore="LockedOrientationActivity" />
 
         <activity
             android:name=".camera_upload.VideoEditActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
 
         <activity
             android:name=".setting.TutorialActivity"
             android:screenOrientation="portrait"
-            android:hardwareAccelerated="false"/>
+            android:hardwareAccelerated="false"
+            tools:ignore="LockedOrientationActivity" />
 
         <service android:name=".camera_upload.VideoEncodeUploadService" />
 
@@ -155,14 +171,11 @@
             android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
             android:enabled="true" />
 
-        <service android:name=".push.AudiFirebaseMessagingService">
+        <service
+            android:name=".push.AudiFirebaseMessagingService"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
-        <service android:name=".push.AudiFirebaseInstanceIDService">
-            <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 

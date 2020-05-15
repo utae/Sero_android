@@ -1,8 +1,8 @@
 package net.videofactory.new_audi.setting;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -17,14 +17,12 @@ import android.widget.Toast;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import net.videofactory.new_audi.R;
-import net.videofactory.new_audi.common.BackPressCloseSystem;
 import net.videofactory.new_audi.common.Network;
 import net.videofactory.new_audi.common.ServerCommunicator;
 import net.videofactory.new_audi.common.Utilities;
-import net.videofactory.new_audi.login.SignupFormActivity;
 import net.videofactory.new_audi.main.OnBackButtonClickListener;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -33,18 +31,18 @@ import butterknife.ButterKnife;
 
 public class ChangePasswordFragment extends Fragment {
 
-    @Bind(R.id.changePWFormContainer) LinearLayout formContainer;
-    @Bind(R.id.changePWCurPWContainer) LinearLayout curPWContainer;
-    @Bind(R.id.changePWCurPW) EditText curPW;
-    @Bind(R.id.changePWCurPWStatusButton) ImageButton curPWStatusButton;
-    @Bind(R.id.changePWNewPWContainer) LinearLayout newPWContainer;
-    @Bind(R.id.changePWNewPw) EditText newPW;
-    @Bind(R.id.changePWNewPWStatusButton) ImageButton newPWStatusButton;
-    @Bind(R.id.changePWConfirmPWContainer) LinearLayout confirmPWContainer;
-    @Bind(R.id.changePWConfirmPW) EditText confirmPW;
-    @Bind(R.id.changePWConfirmPWStatusButton) ImageButton confirmPWStatusButton;
-    @Bind(R.id.changePWButton) Button changePWButton;
-    @Bind(R.id.changePWBackButton) ImageButton backButton;
+    @BindView(R.id.changePWFormContainer) LinearLayout formContainer;
+    @BindView(R.id.changePWCurPWContainer) LinearLayout curPWContainer;
+    @BindView(R.id.changePWCurPW) EditText curPW;
+    @BindView(R.id.changePWCurPWStatusButton) ImageButton curPWStatusButton;
+    @BindView(R.id.changePWNewPWContainer) LinearLayout newPWContainer;
+    @BindView(R.id.changePWNewPw) EditText newPW;
+    @BindView(R.id.changePWNewPWStatusButton) ImageButton newPWStatusButton;
+    @BindView(R.id.changePWConfirmPWContainer) LinearLayout confirmPWContainer;
+    @BindView(R.id.changePWConfirmPW) EditText confirmPW;
+    @BindView(R.id.changePWConfirmPWStatusButton) ImageButton confirmPWStatusButton;
+    @BindView(R.id.changePWButton) Button changePWButton;
+    @BindView(R.id.changePWBackButton) ImageButton backButton;
 
     private ChangePasswordListener changePasswordListener;
     private OnBackButtonClickListener onBackButtonClickListener;

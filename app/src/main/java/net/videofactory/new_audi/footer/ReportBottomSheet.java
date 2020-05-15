@@ -3,10 +3,10 @@ package net.videofactory.new_audi.footer;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.design.widget.BottomSheetDialog;
-import android.support.design.widget.BottomSheetDialogFragment;
+import androidx.annotation.Nullable;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
@@ -19,7 +19,7 @@ import net.videofactory.new_audi.common.Network;
 import net.videofactory.new_audi.common.ServerCommunicator;
 import net.videofactory.new_audi.common.UserInfo;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -27,8 +27,8 @@ import butterknife.ButterKnife;
  */
 public class ReportBottomSheet extends BottomSheetDialogFragment {
 
-    @Bind(R.id.reportBSInappropriate) TextView inappropriateButton;
-    @Bind(R.id.reportBSCopyright) TextView copyrightButton;
+    @BindView(R.id.reportBSInappropriate) TextView inappropriateButton;
+    @BindView(R.id.reportBSCopyright) TextView copyrightButton;
 
     private String mediaNum;
 
@@ -54,7 +54,7 @@ public class ReportBottomSheet extends BottomSheetDialogFragment {
             @Override
             public void onShow(DialogInterface dialog) {
                 BottomSheetDialog d = (BottomSheetDialog) dialog;
-                FrameLayout bottomSheet = (FrameLayout) d.findViewById(android.support.design.R.id.design_bottom_sheet);
+                FrameLayout bottomSheet = (FrameLayout) d.findViewById(com.google.android.material.R.id.design_bottom_sheet);
                 BottomSheetBehavior.from(bottomSheet).setState(BottomSheetBehavior.STATE_EXPANDED);
             }
         });

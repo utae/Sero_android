@@ -3,11 +3,11 @@ package net.videofactory.new_audi.channel_tag;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.design.widget.BottomSheetDialog;
-import android.support.design.widget.BottomSheetDialogFragment;
-import android.support.v7.app.AlertDialog;
+import androidx.annotation.Nullable;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import androidx.appcompat.app.AlertDialog;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
@@ -19,7 +19,7 @@ import net.videofactory.new_audi.R;
 import net.videofactory.new_audi.common.Network;
 import net.videofactory.new_audi.common.ServerCommunicator;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -31,8 +31,8 @@ public class ChannelShowMoreDialog extends BottomSheetDialogFragment {
     private String channelNum;
     private boolean block;
 
-    @Bind(R.id.channelPageBlockButton) TextView blockButton;
-    @Bind(R.id.channelPageReportButton) TextView reportButton;
+    @BindView(R.id.channelPageBlockButton) TextView blockButton;
+    @BindView(R.id.channelPageReportButton) TextView reportButton;
 
     private AlertDialog.Builder alertBuilder;
     private ChannelShowMoreListener channelShowMoreListener;
@@ -61,7 +61,7 @@ public class ChannelShowMoreDialog extends BottomSheetDialogFragment {
             @Override
             public void onShow(DialogInterface dialog) {
                 BottomSheetDialog d = (BottomSheetDialog) dialog;
-                FrameLayout bottomSheet = (FrameLayout) d.findViewById(android.support.design.R.id.design_bottom_sheet);
+                FrameLayout bottomSheet = (FrameLayout) d.findViewById(com.google.android.material.R.id.design_bottom_sheet);
                 BottomSheetBehavior.from(bottomSheet).setState(BottomSheetBehavior.STATE_EXPANDED);
             }
         });

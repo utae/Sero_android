@@ -1,7 +1,7 @@
 package net.videofactory.new_audi.search;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -24,7 +24,7 @@ import net.videofactory.new_audi.home.OnCardClickListener;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -32,9 +32,9 @@ import butterknife.ButterKnife;
  */
 public class SearchResultListFragment extends RefreshFragment {
 
-    @Bind(R.id.searchResultList) ListView searchResultListView;
+    @BindView(R.id.searchResultList) ListView searchResultListView;
 
-    @Bind(R.id.searchResultListEmptyView) ImageView searchResultListEmptyView;
+    @BindView(R.id.searchResultListEmptyView) ImageView searchResultListEmptyView;
 
     private int type; // 0 : channel, 1 : tag
 

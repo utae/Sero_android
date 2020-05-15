@@ -1,7 +1,7 @@
 package net.videofactory.new_audi.home;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -23,7 +23,7 @@ import net.videofactory.new_audi.common.Utilities;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -45,9 +45,9 @@ public class HomePageFragment extends RefreshFragment{
 
     private OnCardClickListener onCardClickListener;
 
-    @Bind(R.id.homeCardAddButton) ImageButton homeCardAddButton;
+    @BindView(R.id.homeCardAddButton) ImageButton homeCardAddButton;
 
-    @Bind(R.id.homeCardListView) ListView homeCardListView;
+    @BindView(R.id.homeCardListView) ListView homeCardListView;
 
     @Nullable
     @Override
@@ -256,11 +256,11 @@ public class HomePageFragment extends RefreshFragment{
 
     static class HeaderHolder{
 
-        @Bind(R.id.homeCardTrending) LinearLayout trending;
+        @BindView(R.id.homeCardTrending) LinearLayout trending;
 
-        @Bind(R.id.homeCardFavorite) LinearLayout favorite;
+        @BindView(R.id.homeCardFavorite) LinearLayout favorite;
 
-        @Bind(R.id.homeCardFollowing) LinearLayout following;
+        @BindView(R.id.homeCardFollowing) LinearLayout following;
 
         public HeaderHolder(View view) {
             ButterKnife.bind(this, view);

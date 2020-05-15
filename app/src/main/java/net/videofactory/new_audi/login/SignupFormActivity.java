@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -26,10 +26,8 @@ import net.videofactory.new_audi.common.Network;
 import net.videofactory.new_audi.common.ServerCommunicator;
 import net.videofactory.new_audi.common.UserInfo;
 import net.videofactory.new_audi.common.Utilities;
-import net.videofactory.new_audi.main.MainActivity;
-import net.videofactory.new_audi.setting.TutorialActivity;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -37,27 +35,27 @@ import butterknife.ButterKnife;
  */
 public class SignupFormActivity extends AppCompatActivity {
 
-    @Bind(R.id.signupInputEmail) EditText signupInputEmail;
-    @Bind(R.id.signupInputPW) EditText signupInputPW;
-    @Bind(R.id.signupInputPWConfirm) EditText signupInputPWConfirm;
-    @Bind(R.id.signupInputName) EditText signupInputName;
-    @Bind(R.id.signupInputNickName) EditText signupInputNickName;
-    @Bind(R.id.signupGenderRadioGroup) RadioGroup genderRadioGroup;
-    @Bind(R.id.signupBirthSelectButton) Button birthSelectButton;
-    @Bind(R.id.signupButton) Button signupButton;
-    @Bind(R.id.signupInputNameContainer) LinearLayout inputNameContainer;
-    @Bind(R.id.signupInputNickNameContainer) LinearLayout inputNickNameContainer;
-    @Bind(R.id.signupInputEmailContainer) LinearLayout inputEmailContainer;
-    @Bind(R.id.signupInputPWContainer) LinearLayout inputPWContainer;
-    @Bind(R.id.signupInputPWConfirmContainer) LinearLayout inputPWConfirmContainer;
-    @Bind(R.id.signupNameStatusButton) ImageButton nameStatusButton;
-    @Bind(R.id.signupNickNameStatusButton) ImageButton nickNameStatusButton;
-    @Bind(R.id.signupEmailStatusButton) ImageButton emailStatusButton;
-    @Bind(R.id.signupPWStatusButton) ImageButton pwStatusButton;
-    @Bind(R.id.signupPWConfirmStatusButton) ImageButton pwConfirmStatusButton;
-    @Bind(R.id.signupFormContainer) LinearLayout formContainer;
-    @Bind(R.id.signupPolicy) TextView policy;
-    @Bind(R.id.signupBackButton) ImageButton backButton;
+    @BindView(R.id.signupInputEmail) EditText signupInputEmail;
+    @BindView(R.id.signupInputPW) EditText signupInputPW;
+    @BindView(R.id.signupInputPWConfirm) EditText signupInputPWConfirm;
+    @BindView(R.id.signupInputName) EditText signupInputName;
+    @BindView(R.id.signupInputNickName) EditText signupInputNickName;
+    @BindView(R.id.signupGenderRadioGroup) RadioGroup genderRadioGroup;
+    @BindView(R.id.signupBirthSelectButton) Button birthSelectButton;
+    @BindView(R.id.signupButton) Button signupButton;
+    @BindView(R.id.signupInputNameContainer) LinearLayout inputNameContainer;
+    @BindView(R.id.signupInputNickNameContainer) LinearLayout inputNickNameContainer;
+    @BindView(R.id.signupInputEmailContainer) LinearLayout inputEmailContainer;
+    @BindView(R.id.signupInputPWContainer) LinearLayout inputPWContainer;
+    @BindView(R.id.signupInputPWConfirmContainer) LinearLayout inputPWConfirmContainer;
+    @BindView(R.id.signupNameStatusButton) ImageButton nameStatusButton;
+    @BindView(R.id.signupNickNameStatusButton) ImageButton nickNameStatusButton;
+    @BindView(R.id.signupEmailStatusButton) ImageButton emailStatusButton;
+    @BindView(R.id.signupPWStatusButton) ImageButton pwStatusButton;
+    @BindView(R.id.signupPWConfirmStatusButton) ImageButton pwConfirmStatusButton;
+    @BindView(R.id.signupFormContainer) LinearLayout formContainer;
+    @BindView(R.id.signupPolicy) TextView policy;
+    @BindView(R.id.signupBackButton) ImageButton backButton;
 
     private DatePickerPopWin datePickerPopWin;
     private String email = null;

@@ -9,14 +9,14 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Vibrator;
 import android.provider.MediaStore;
-import android.support.annotation.IdRes;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.GestureDetectorCompat;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.IdRes;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.FragmentManager;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.GestureDetectorCompat;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -80,21 +80,21 @@ import net.videofactory.new_audi.video.VideoInfo;
 import java.io.File;
 import java.util.Arrays;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends AppCompatActivity implements MainView {
 
-    @Bind(R.id.videoViewPager) ViewPager videoViewPager;
+    @BindView(R.id.videoViewPager) ViewPager videoViewPager;
 
-    @Bind(R.id.videoViewPagerContainer) FrameLayout videoViewPagerContainer;
+    @BindView(R.id.videoViewPagerContainer) FrameLayout videoViewPagerContainer;
 
-    @Bind(R.id.audiLayoutView) AudiLayout audiLayoutView;
+    @BindView(R.id.audiLayoutView) AudiLayout audiLayoutView;
 
-    @Bind(R.id.menuPageContainer) LinearLayout menuPageContainer;
+    @BindView(R.id.menuPageContainer) LinearLayout menuPageContainer;
 
-    @Bind(R.id.mainDragger) FrameLayout dragger;
+    @BindView(R.id.mainDragger) FrameLayout dragger;
 
     private MainPresenter mainPresenter;
 

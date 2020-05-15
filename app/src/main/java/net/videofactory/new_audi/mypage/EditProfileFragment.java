@@ -3,8 +3,8 @@ package net.videofactory.new_audi.mypage;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,7 +27,7 @@ import net.videofactory.new_audi.common.Utilities;
 import net.videofactory.new_audi.custom_view.loading_image_view.CircleLoadingImageView;
 import net.videofactory.new_audi.custom_view.loading_image_view.LoadingDrawable;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -35,15 +35,15 @@ import butterknife.ButterKnife;
  */
 public class EditProfileFragment extends Fragment {
 
-    @Bind(R.id.editProfileBackButton) ImageButton backButton;
-    @Bind(R.id.editProfileImg) CircleLoadingImageView profileImg;
-    @Bind(R.id.editProfileNickName) TextView nickName;
-    @Bind(R.id.editProfileIntro) EditText intro;
-    @Bind(R.id.editProfileName) EditText name;
-    @Bind(R.id.editProfileEmail) EditText email;
-    @Bind(R.id.editProfileGenderRadioGroup) RadioGroup genderRadioGroup;
-    @Bind(R.id.editProfileBirthSelectButton) Button birthSelectButton;
-    @Bind(R.id.editProfileSaveButton) Button saveButton;
+    @BindView(R.id.editProfileBackButton) ImageButton backButton;
+    @BindView(R.id.editProfileImg) CircleLoadingImageView profileImg;
+    @BindView(R.id.editProfileNickName) TextView nickName;
+    @BindView(R.id.editProfileIntro) EditText intro;
+    @BindView(R.id.editProfileName) EditText name;
+    @BindView(R.id.editProfileEmail) EditText email;
+    @BindView(R.id.editProfileGenderRadioGroup) RadioGroup genderRadioGroup;
+    @BindView(R.id.editProfileBirthSelectButton) Button birthSelectButton;
+    @BindView(R.id.editProfileSaveButton) Button saveButton;
 
     private DatePickerPopWin datePickerPopWin;
     private EditProfileListener editProfileListener;

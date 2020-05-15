@@ -1,22 +1,17 @@
 package net.videofactory.new_audi.footer;
 
-import android.content.ClipData;
-import android.content.ClipboardManager;
-import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.Toast;
 
 import net.videofactory.new_audi.R;
-import net.videofactory.new_audi.common.UserInfo;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -26,7 +21,7 @@ public class CommentDialog extends DialogFragment {
 
     private CommentListAdapter commentListAdapter;
 
-    @Bind(R.id.copyButton) Button copyButton;
+    @BindView(R.id.copyButton) Button copyButton;
 
     private int position;
 

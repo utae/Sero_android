@@ -3,17 +3,16 @@ package net.videofactory.new_audi.footer;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.design.widget.BottomSheetDialog;
-import android.support.design.widget.BottomSheetDialogFragment;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -22,7 +21,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import net.videofactory.new_audi.R;
 import net.videofactory.new_audi.channel_tag.FollowChannelListAdapter;
 import net.videofactory.new_audi.channel_tag.ItemOfFollowListChannel;
-import net.videofactory.new_audi.channel_tag.OnFollowListItemClickListener;
 import net.videofactory.new_audi.common.Network;
 import net.videofactory.new_audi.common.ServerCommunicator;
 import net.videofactory.new_audi.common.UserInfo;
@@ -31,7 +29,7 @@ import net.videofactory.new_audi.main.OnProfileImgClickListener;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -40,8 +38,8 @@ import butterknife.ButterKnife;
 
 public class LikeListBottomSheet extends BottomSheetDialogFragment {
 
-    @Bind(R.id.likeListCount) TextView likeCount;
-    @Bind(R.id.likeListView) ListView likeListView;
+    @BindView(R.id.likeListCount) TextView likeCount;
+    @BindView(R.id.likeListView) ListView likeListView;
 
     private ArrayList<ItemOfFollowListChannel> channelList;
     private FollowChannelListAdapter channelListAdapter;
@@ -75,7 +73,7 @@ public class LikeListBottomSheet extends BottomSheetDialogFragment {
             @Override
             public void onShow(DialogInterface dialog) {
                 BottomSheetDialog d = (BottomSheetDialog) dialog;
-                FrameLayout bottomSheet = (FrameLayout) d.findViewById(android.support.design.R.id.design_bottom_sheet);
+                FrameLayout bottomSheet = (FrameLayout) d.findViewById(com.google.android.material.R.id.design_bottom_sheet);
                 BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.from(bottomSheet);
                 bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
                 bottomSheetBehavior.setPeekHeight(0);

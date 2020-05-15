@@ -1,7 +1,7 @@
 package net.videofactory.new_audi.channel_tag;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +11,7 @@ import net.videofactory.new_audi.R;
 import net.videofactory.new_audi.audi_fragment_manager.RefreshFragment;
 import net.videofactory.new_audi.main.OnBackButtonClickListener;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -19,7 +19,7 @@ import butterknife.ButterKnife;
  */
 public class FollowerFragment extends RefreshFragment {
 
-    @Bind(R.id.followerBackButton) ImageButton backButton;
+    @BindView(R.id.followerBackButton) ImageButton backButton;
 
     private OnBackButtonClickListener onBackButtonClickListener;
     private OnFollowListItemClickListener onFollowListItemClickListener;

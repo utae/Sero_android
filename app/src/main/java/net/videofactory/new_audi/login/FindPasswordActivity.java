@@ -3,9 +3,9 @@ package net.videofactory.new_audi.login;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -22,7 +22,7 @@ import net.videofactory.new_audi.common.Network;
 import net.videofactory.new_audi.common.ServerCommunicator;
 import net.videofactory.new_audi.common.Utilities;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -31,12 +31,12 @@ import butterknife.ButterKnife;
 
 public class FindPasswordActivity extends AppCompatActivity {
 
-    @Bind(R.id.findPWFormContainer) LinearLayout formContainer;
-    @Bind(R.id.findPWBackButton) ImageButton backButton;
-    @Bind(R.id.findPWEmailContainer) LinearLayout emailContainer;
-    @Bind(R.id.findPWEmail) EditText emailEditText;
-    @Bind(R.id.findPWEmailStatus) ImageButton emailStatusButton;
-    @Bind(R.id.findPWButton) Button findButton;
+    @BindView(R.id.findPWFormContainer) LinearLayout formContainer;
+    @BindView(R.id.findPWBackButton) ImageButton backButton;
+    @BindView(R.id.findPWEmailContainer) LinearLayout emailContainer;
+    @BindView(R.id.findPWEmail) EditText emailEditText;
+    @BindView(R.id.findPWEmailStatus) ImageButton emailStatusButton;
+    @BindView(R.id.findPWButton) Button findButton;
 
     private AlertDialog.Builder alertBuilder;
     private AlertDialog alertDialog;

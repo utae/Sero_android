@@ -3,17 +3,17 @@ package net.videofactory.new_audi.footer;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.design.widget.BottomSheetDialog;
-import android.support.design.widget.BottomSheetDialogFragment;
+import androidx.annotation.Nullable;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import net.videofactory.new_audi.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -22,9 +22,9 @@ import butterknife.ButterKnife;
 
 public class ShareBottomSheet extends BottomSheetDialogFragment {
 
-    @Bind(R.id.shareBSFacebook) TextView facebookButton;
-    @Bind(R.id.shareBSInstagram) TextView instagramButton;
-    @Bind(R.id.shareBSUrl) TextView urlButton;
+    @BindView(R.id.shareBSFacebook) TextView facebookButton;
+    @BindView(R.id.shareBSInstagram) TextView instagramButton;
+    @BindView(R.id.shareBSUrl) TextView urlButton;
 
     private String videoUrl;
 
@@ -52,7 +52,7 @@ public class ShareBottomSheet extends BottomSheetDialogFragment {
             @Override
             public void onShow(DialogInterface dialog) {
                 BottomSheetDialog d = (BottomSheetDialog) dialog;
-                FrameLayout bottomSheet = (FrameLayout) d.findViewById(android.support.design.R.id.design_bottom_sheet);
+                FrameLayout bottomSheet = (FrameLayout) d.findViewById(com.google.android.material.R.id.design_bottom_sheet);
                 BottomSheetBehavior.from(bottomSheet).setState(BottomSheetBehavior.STATE_EXPANDED);
             }
         });

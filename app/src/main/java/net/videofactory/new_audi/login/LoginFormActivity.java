@@ -3,7 +3,7 @@ package net.videofactory.new_audi.login;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -16,7 +16,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.googlecode.mp4parser.authoring.Edit;
 
 import net.videofactory.new_audi.R;
 import net.videofactory.new_audi.common.Network;
@@ -25,7 +24,7 @@ import net.videofactory.new_audi.common.UserInfo;
 import net.videofactory.new_audi.common.Utilities;
 import net.videofactory.new_audi.main.MainActivity;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -33,16 +32,16 @@ import butterknife.ButterKnife;
  */
 public class LoginFormActivity extends AppCompatActivity {
 
-    @Bind(R.id.loginFormContainer) LinearLayout formContainer;
-    @Bind(R.id.loginInputId) EditText loginInputId;
-    @Bind(R.id.loginInputPW) EditText loginInputPW;
-    @Bind(R.id.loginButton) Button loginButton;
-    @Bind(R.id.loginInputIdContainer) LinearLayout inputIdContainer;
-    @Bind(R.id.loginInputPWContainer) LinearLayout inputPWContainer;
-    @Bind(R.id.loginIdStatusButton) ImageButton idStatusButton;
-    @Bind(R.id.loginPWStatusButton) ImageButton pwStatusButton;
-    @Bind(R.id.loginFindPWButton) TextView findPWButton;
-    @Bind(R.id.loginBackButton) ImageButton backButton;
+    @BindView(R.id.loginFormContainer) LinearLayout formContainer;
+    @BindView(R.id.loginInputId) EditText loginInputId;
+    @BindView(R.id.loginInputPW) EditText loginInputPW;
+    @BindView(R.id.loginButton) Button loginButton;
+    @BindView(R.id.loginInputIdContainer) LinearLayout inputIdContainer;
+    @BindView(R.id.loginInputPWContainer) LinearLayout inputPWContainer;
+    @BindView(R.id.loginIdStatusButton) ImageButton idStatusButton;
+    @BindView(R.id.loginPWStatusButton) ImageButton pwStatusButton;
+    @BindView(R.id.loginFindPWButton) TextView findPWButton;
+    @BindView(R.id.loginBackButton) ImageButton backButton;
 
     private String id, pw, encryptionPW = null;
 

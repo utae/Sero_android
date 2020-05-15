@@ -2,11 +2,10 @@ package net.videofactory.new_audi.camera_upload;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -19,7 +18,7 @@ import net.videofactory.new_audi.main.MainActivity;
 import java.io.File;
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -30,10 +29,10 @@ public class UploadFormActivity extends AppCompatActivity {
     private String videoPath;
     private String duration;
 
-    @Bind(R.id.uploadFormBackButton) ImageButton backButton;
-    @Bind(R.id.uploadFormEditText) EditText editText;
-    @Bind(R.id.uploadFormSaveToMyDevice) ImageButton saveToMyDevice;
-    @Bind(R.id.uploadFormUpload) Button uploadButton;
+    @BindView(R.id.uploadFormBackButton) ImageButton backButton;
+    @BindView(R.id.uploadFormEditText) EditText editText;
+    @BindView(R.id.uploadFormSaveToMyDevice) ImageButton saveToMyDevice;
+    @BindView(R.id.uploadFormUpload) Button uploadButton;
 
     private ArrayList<String> hashtagList;
 

@@ -1,6 +1,6 @@
 package net.videofactory.new_audi.main;
 
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.ViewPager;
 
 import net.videofactory.new_audi.footer.FooterFragment;
 import net.videofactory.new_audi.video.OnVideoThumbnailClickListener;

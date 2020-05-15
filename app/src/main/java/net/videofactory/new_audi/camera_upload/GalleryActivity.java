@@ -6,9 +6,9 @@ import android.database.Cursor;
 import android.media.MediaMetadataRetriever;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,11 +16,10 @@ import android.widget.GridView;
 import android.widget.ImageButton;
 
 import net.videofactory.new_audi.R;
-import net.videofactory.new_audi.main.MainActivity;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -28,8 +27,8 @@ import butterknife.ButterKnife;
  */
 public class GalleryActivity extends AppCompatActivity {
 
-    @Bind(R.id.galleryBackButton) ImageButton backButton;
-    @Bind(R.id.galleryThumbnailList) GridView thumbnailListView;
+    @BindView(R.id.galleryBackButton) ImageButton backButton;
+    @BindView(R.id.galleryThumbnailList) GridView thumbnailListView;
 
     private GalleryAdapter galleryAdapter;
 

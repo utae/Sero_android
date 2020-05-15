@@ -2,12 +2,11 @@ package net.videofactory.new_audi.footer;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,12 +20,11 @@ import net.videofactory.new_audi.common.UserInfo;
 import net.videofactory.new_audi.common.Utilities;
 import net.videofactory.new_audi.custom_view.loading_image_view.CircleLoadingImageView;
 import net.videofactory.new_audi.custom_view.loading_image_view.LoadingDrawable;
-import net.videofactory.new_audi.custom_view.loading_image_view.LoadingImageView;
 import net.videofactory.new_audi.main.OnProfileImgClickListener;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -221,19 +219,19 @@ public class CommentListAdapter  extends BaseAdapter{
 
     static class ViewHolder {
 
-        @Bind(R.id.commentProfile) CircleLoadingImageView profile;
+        @BindView(R.id.commentProfile) CircleLoadingImageView profile;
 
-        @Bind(R.id.commentNickName) TextView nickName;
+        @BindView(R.id.commentNickName) TextView nickName;
 
-        @Bind(R.id.commentContent) TextView comment;
+        @BindView(R.id.commentContent) TextView comment;
 
-        @Bind(R.id.commentTime) TextView time;
+        @BindView(R.id.commentTime) TextView time;
 
-        @Bind(R.id.commentLikeButton) TextView likeButton;
+        @BindView(R.id.commentLikeButton) TextView likeButton;
 
-        @Bind(R.id.commentDelButton) TextView delButton;
+        @BindView(R.id.commentDelButton) TextView delButton;
 
-        @Bind(R.id.commentLikeCount) TextView likeCount;
+        @BindView(R.id.commentLikeCount) TextView likeCount;
 
         public ViewHolder(View view) {
             ButterKnife.bind(this,view);

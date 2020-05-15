@@ -15,7 +15,7 @@ import net.videofactory.new_audi.custom_view.loading_image_view.LoadingImageView
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -83,9 +83,9 @@ public class SearchTagListAdapter extends BaseAdapter {
 
     static class ViewHolder {
 
-        @Bind(R.id.searchTagListThumbnailView) LoadingImageView thumbnail;
+        @BindView(R.id.searchTagListThumbnailView) LoadingImageView thumbnail;
 
-        @Bind(R.id.searchTagListNameView) TextView name;
+        @BindView(R.id.searchTagListNameView) TextView name;
 
         public ViewHolder(View view) {
             ButterKnife.bind(this, view);

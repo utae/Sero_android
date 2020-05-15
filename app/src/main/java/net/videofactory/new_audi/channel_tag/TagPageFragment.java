@@ -2,7 +2,7 @@ package net.videofactory.new_audi.channel_tag;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -31,7 +31,7 @@ import net.videofactory.new_audi.video.VideoThumbnailListAdapter;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import in.srain.cube.views.GridViewWithHeaderAndFooter;
 
@@ -43,9 +43,9 @@ public class TagPageFragment extends RefreshFragment {
     private String hashTag;
     private boolean follow;
 
-    @Bind(R.id.tagPageTitle) TextView title;
-    @Bind(R.id.tagPageVideoList) GridViewWithHeaderAndFooter videoList;
-    @Bind(R.id.tagPageBackButton) ImageButton backButton;
+    @BindView(R.id.tagPageTitle) TextView title;
+    @BindView(R.id.tagPageVideoList) GridViewWithHeaderAndFooter videoList;
+    @BindView(R.id.tagPageBackButton) ImageButton backButton;
 
     private HeaderHolder headerHolder;
     private ArrayList<VideoInfo> videoInfoList;
@@ -290,9 +290,9 @@ public class TagPageFragment extends RefreshFragment {
 
     static class HeaderHolder{
 
-        @Bind(R.id.tagPageVideoCount) TextView videoCount;
-        @Bind(R.id.tagPageFollowerCount) TextView followerCount;
-        @Bind(R.id.tagPageFollowButton) Button followButton;
+        @BindView(R.id.tagPageVideoCount) TextView videoCount;
+        @BindView(R.id.tagPageFollowerCount) TextView followerCount;
+        @BindView(R.id.tagPageFollowButton) Button followButton;
 
         public HeaderHolder(View view) {
             ButterKnife.bind(this, view);

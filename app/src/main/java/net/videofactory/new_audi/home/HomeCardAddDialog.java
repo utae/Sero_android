@@ -2,8 +2,8 @@ package net.videofactory.new_audi.home;
 
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import net.videofactory.new_audi.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -22,9 +22,9 @@ import butterknife.ButterKnife;
  */
 public class HomeCardAddDialog extends DialogFragment {
 
-    @Bind(R.id.homeCardAddDialogChannel) TextView channelAddButton;
-    @Bind(R.id.homeCardAddDialogTag) TextView tagAddButton;
-    @Bind(R.id.homeCardAddDialogClose) ImageButton closeButton;
+    @BindView(R.id.homeCardAddDialogChannel) TextView channelAddButton;
+    @BindView(R.id.homeCardAddDialogTag) TextView tagAddButton;
+    @BindView(R.id.homeCardAddDialogClose) ImageButton closeButton;
 
     private OnDialogButtonCLickListener onDialogButtonCLickListener;
 

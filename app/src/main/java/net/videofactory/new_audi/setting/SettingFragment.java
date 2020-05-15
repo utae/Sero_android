@@ -4,8 +4,8 @@ package net.videofactory.new_audi.setting;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import net.videofactory.new_audi.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -22,11 +22,11 @@ import butterknife.ButterKnife;
 
 public class SettingFragment extends Fragment {
 
-    @Bind(R.id.settingSignOut) TextView signOutButton;
-    @Bind(R.id.settingChangePassword) TextView changePWButton;
-    @Bind(R.id.settingTutorial) TextView tutorialButton;
-    @Bind(R.id.settingTerms) TextView terms;
-    @Bind(R.id.settingPrivacyPolicy) TextView privacyPolicy;
+    @BindView(R.id.settingSignOut) TextView signOutButton;
+    @BindView(R.id.settingChangePassword) TextView changePWButton;
+    @BindView(R.id.settingTutorial) TextView tutorialButton;
+    @BindView(R.id.settingTerms) TextView terms;
+    @BindView(R.id.settingPrivacyPolicy) TextView privacyPolicy;
 
     private SettingListener settingListener;
 

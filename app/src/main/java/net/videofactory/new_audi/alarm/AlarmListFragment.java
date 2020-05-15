@@ -1,7 +1,7 @@
 package net.videofactory.new_audi.alarm;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -22,7 +22,7 @@ import net.videofactory.new_audi.video.VideoInfo;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import in.srain.cube.views.ptr.PtrClassicFrameLayout;
 import in.srain.cube.views.ptr.PtrDefaultHandler;
@@ -42,9 +42,9 @@ public class AlarmListFragment extends RefreshFragment {
 
     private AlarmListAdapter alarmListAdapter;
 
-    @Bind(R.id.alarmList) ListView alarmListView;
-    @Bind(R.id.alarmListEmptyView) ImageView alarmListEmptyView;
-    @Bind(R.id.alarmListRefresher) PtrClassicFrameLayout alarmListRefresher;
+    @BindView(R.id.alarmList) ListView alarmListView;
+    @BindView(R.id.alarmListEmptyView) ImageView alarmListEmptyView;
+    @BindView(R.id.alarmListRefresher) PtrClassicFrameLayout alarmListRefresher;
 
     private AlarmListListener alarmListListener;
 

@@ -1,12 +1,11 @@
 package net.videofactory.new_audi.camera_upload;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +13,7 @@ import android.widget.ImageButton;
 
 import net.videofactory.new_audi.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -36,10 +35,10 @@ public class VideoEditControllerFragment extends Fragment {
 
     private MusicPanelFragment musicPanelFragment;
 
-    @Bind(R.id.videoEditPlayButton) ImageButton videoEditPlayButton;
-    @Bind(R.id.videoEditPrevButton) ImageButton videoEditPrevButton;
-    @Bind(R.id.videoEditNextButton) ImageButton videoEditNextButton;
-    @Bind(R.id.videoEditCloseButton) ImageButton videoEditCloseButton;
+    @BindView(R.id.videoEditPlayButton) ImageButton videoEditPlayButton;
+    @BindView(R.id.videoEditPrevButton) ImageButton videoEditPrevButton;
+    @BindView(R.id.videoEditNextButton) ImageButton videoEditNextButton;
+    @BindView(R.id.videoEditCloseButton) ImageButton videoEditCloseButton;
 
     public static VideoEditControllerFragment create(int delimiter){
         VideoEditControllerFragment videoEditControllerFragment = new VideoEditControllerFragment();

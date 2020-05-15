@@ -210,4 +210,6 @@ fabric.properties
 
 !/gradle/wrapper/gradle-wrapper.jar
 
+./New_Audi.zip
+
 # End of https://www.gitignore.io/api/android,androidstudio

@@ -1,9 +1,9 @@
 package net.videofactory.new_audi.audi_fragment_manager;
 
-import android.support.annotation.IdRes;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import androidx.annotation.IdRes;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import net.videofactory.new_audi.alarm.AlarmPageFragment;
 import net.videofactory.new_audi.common.ReorderedArraySet;

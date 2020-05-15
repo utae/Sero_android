@@ -2,9 +2,9 @@ package net.videofactory.new_audi.setting;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -14,7 +14,7 @@ import net.videofactory.new_audi.main.MainActivity;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -25,10 +25,10 @@ public class TutorialActivity extends AppCompatActivity {
 
     private int curPage;
 
-    @Bind(R.id.tutorialAudiLayout) AudiLayout audiLayout;
-    @Bind(R.id.tutorialTopImageView) ImageView topImageView;
-    @Bind(R.id.tutorialViewPager) TutorialViewPager tutorialViewPager;
-    @Bind(R.id.tutorialBottomImageView) ImageView bottomImageView;
+    @BindView(R.id.tutorialAudiLayout) AudiLayout audiLayout;
+    @BindView(R.id.tutorialTopImageView) ImageView topImageView;
+    @BindView(R.id.tutorialViewPager) TutorialViewPager tutorialViewPager;
+    @BindView(R.id.tutorialBottomImageView) ImageView bottomImageView;
 
     private ArrayList<Integer> resIdList = new ArrayList<>();
     private TutorialPagerAdapter pagerAdapter;

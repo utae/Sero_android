@@ -9,8 +9,8 @@ import android.content.pm.Signature;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
@@ -29,15 +29,12 @@ import com.facebook.FacebookSdk;
 import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
 import com.facebook.appevents.AppEventsLogger;
-import com.facebook.login.LoginBehavior;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import net.videofactory.new_audi.R;
 import net.videofactory.new_audi.common.BackPressCloseSystem;
-import net.videofactory.new_audi.encryption.CrytAudi;
 import net.videofactory.new_audi.common.Network;
 import net.videofactory.new_audi.common.ServerCommunicator;
 import net.videofactory.new_audi.common.UserInfo;
@@ -47,14 +44,10 @@ import net.videofactory.new_audi.main.MainActivity;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.math.BigInteger;
-import java.security.KeyFactory;
 import java.security.MessageDigest;
-import java.security.PublicKey;
-import java.security.spec.RSAPublicKeySpec;
 import java.util.Arrays;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -62,14 +55,14 @@ import butterknife.ButterKnife;
  */
 public class LoginHomeActivity extends AppCompatActivity {
 
-    @Bind(R.id.loginBtnContainer) LinearLayout loginBtnContainer;
-    @Bind(R.id.loginFbButton) LinearLayout loginFbButton;
-    @Bind(R.id.loginEmailButton) LinearLayout loginEmailButton;
-    @Bind(R.id.signupEmailButton) Button signupEmailButton;
-    @Bind(R.id.loginBackgroundVideoView) VideoView backgroundVideoView;
-    @Bind(R.id.logoView) ImageView logoView;
-    @Bind(R.id.loginTerms) TextView terms;
-    @Bind(R.id.loginPrivacyPolicy) TextView privacyPolicy;
+    @BindView(R.id.loginBtnContainer) LinearLayout loginBtnContainer;
+    @BindView(R.id.loginFbButton) LinearLayout loginFbButton;
+    @BindView(R.id.loginEmailButton) LinearLayout loginEmailButton;
+    @BindView(R.id.signupEmailButton) Button signupEmailButton;
+    @BindView(R.id.loginBackgroundVideoView) VideoView backgroundVideoView;
+    @BindView(R.id.logoView) ImageView logoView;
+    @BindView(R.id.loginTerms) TextView terms;
+    @BindView(R.id.loginPrivacyPolicy) TextView privacyPolicy;
 
     private CallbackManager callbackManager;
 

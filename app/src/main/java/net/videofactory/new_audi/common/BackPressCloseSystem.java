@@ -2,11 +2,10 @@ package net.videofactory.new_audi.common;
 
 import android.app.Activity;
 import android.os.SystemClock;
-import android.support.v4.app.ActivityCompat;
+import androidx.core.app.ActivityCompat;
 import android.widget.Toast;
 
 import com.facebook.appevents.AppEventsLogger;
-import com.fasterxml.jackson.databind.JsonNode;
 
 /**
  * Created by Utae on 2015-11-09.

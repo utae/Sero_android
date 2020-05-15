@@ -1,7 +1,7 @@
 package net.videofactory.new_audi.custom_view.loading_image_view;
 
 import android.graphics.drawable.ColorDrawable;
-import android.support.annotation.IdRes;
+import androidx.annotation.IdRes;
 
 import net.videofactory.new_audi.async.ImagePickerTask;
 

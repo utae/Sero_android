@@ -5,8 +5,8 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +17,7 @@ import net.videofactory.new_audi.common.Utilities;
 import net.videofactory.new_audi.custom_view.loading_image_view.LoadingDrawable;
 import net.videofactory.new_audi.custom_view.loading_image_view.LoadingImageView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -28,7 +28,7 @@ public class SearchBannerFragment extends Fragment {
     private String imgUrl;
     private String bannerLink;
 
-    @Bind(R.id.searchBannerImageView) LoadingImageView bannerImageView;
+    @BindView(R.id.searchBannerImageView) LoadingImageView bannerImageView;
 
     public static SearchBannerFragment create(String imgUrl, String bannerLink){
         SearchBannerFragment searchBannerFragment = new SearchBannerFragment();

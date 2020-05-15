@@ -24,7 +24,7 @@ import net.videofactory.new_audi.custom_view.loading_image_view.LoadingImageView
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -129,11 +129,11 @@ public class FollowTagListAdapter extends BaseAdapter {
 
     static class ViewHolder {
 
-        @Bind(R.id.followListTagName) TextView tagName;
+        @BindView(R.id.followListTagName) TextView tagName;
 
-        @Bind(R.id.followListTagFollowButton) Button followButton;
+        @BindView(R.id.followListTagFollowButton) Button followButton;
 
-        @Bind(R.id.followListTagFollowButtonContainer) FrameLayout followButtonContainer;
+        @BindView(R.id.followListTagFollowButtonContainer) FrameLayout followButtonContainer;
 
         public ViewHolder(View view) {
             ButterKnife.bind(this, view);

@@ -3,8 +3,8 @@ package net.videofactory.new_audi.login;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,7 +14,7 @@ import android.widget.Button;
 
 import net.videofactory.new_audi.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -22,8 +22,8 @@ import butterknife.ButterKnife;
  */
 public class LoginEmailDialog extends DialogFragment {
 
-    @Bind(R.id.signupButton) Button signupButton;
-    @Bind(R.id.loginButton) Button loginButton;
+    @BindView(R.id.signupButton) Button signupButton;
+    @BindView(R.id.loginButton) Button loginButton;
 
     @Nullable
     @Override

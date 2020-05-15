@@ -4,14 +4,13 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
@@ -28,7 +27,7 @@ import net.videofactory.new_audi.custom_view.audi_video_view.AudiVideoView;
 
 import java.util.concurrent.TimeUnit;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -36,9 +35,9 @@ import butterknife.ButterKnife;
  */
 public class VideoViewFragment extends Fragment {
 
-    @Bind(R.id.videoPageVideoView) AudiVideoView videoView;
-    @Bind(R.id.videoPageLikeImg) ImageView likeImgView;
-    @Bind(R.id.videoPageProgressBar) ProgressBar progressBar;
+    @BindView(R.id.videoPageVideoView) AudiVideoView videoView;
+    @BindView(R.id.videoPageLikeImg) ImageView likeImgView;
+    @BindView(R.id.videoPageProgressBar) ProgressBar progressBar;
 
     private View rootView;
 

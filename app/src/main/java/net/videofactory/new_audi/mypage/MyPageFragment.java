@@ -2,7 +2,7 @@ package net.videofactory.new_audi.mypage;
 
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,7 +30,7 @@ import net.videofactory.new_audi.custom_view.loading_image_view.LoadingDrawable;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import in.srain.cube.views.GridViewWithHeaderAndFooter;
 
@@ -40,9 +40,9 @@ import in.srain.cube.views.GridViewWithHeaderAndFooter;
  */
 public class MyPageFragment extends RefreshFragment{
 
-    @Bind(R.id.myName) TextView nameView;
-    @Bind(R.id.settingButton) ImageButton settingButton;
-    @Bind(R.id.myVideoList) GridViewWithHeaderAndFooter videoListView;
+    @BindView(R.id.myName) TextView nameView;
+    @BindView(R.id.settingButton) ImageButton settingButton;
+    @BindView(R.id.myVideoList) GridViewWithHeaderAndFooter videoListView;
 
     private ArrayList<VideoInfo> videoInfoList;
     private String IDX = null;
@@ -256,15 +256,15 @@ public class MyPageFragment extends RefreshFragment{
     }
 
     static class HeaderHolder{
-        @Bind(R.id.myProfileImg) CircleLoadingImageView profileImgView;
-        @Bind(R.id.myVideoCount) TextView videoCountView;
-        @Bind(R.id.myFollowerCount) TextView followerCountView;
-        @Bind(R.id.myFollowingCount) TextView followingCountView;
-        @Bind(R.id.myNickName) TextView nickNameView;
-        @Bind(R.id.myEditProfile) Button editProfile;
-        @Bind(R.id.myIntro) TextView introView;
-        @Bind(R.id.myFollowerContainer) LinearLayout followerContainer;
-        @Bind(R.id.myFollowingContainer) LinearLayout followingContainer;
+        @BindView(R.id.myProfileImg) CircleLoadingImageView profileImgView;
+        @BindView(R.id.myVideoCount) TextView videoCountView;
+        @BindView(R.id.myFollowerCount) TextView followerCountView;
+        @BindView(R.id.myFollowingCount) TextView followingCountView;
+        @BindView(R.id.myNickName) TextView nickNameView;
+        @BindView(R.id.myEditProfile) Button editProfile;
+        @BindView(R.id.myIntro) TextView introView;
+        @BindView(R.id.myFollowerContainer) LinearLayout followerContainer;
+        @BindView(R.id.myFollowingContainer) LinearLayout followingContainer;
 
         public HeaderHolder(View view) {
             ButterKnife.bind(this, view);

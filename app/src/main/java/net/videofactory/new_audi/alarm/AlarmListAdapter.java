@@ -16,7 +16,7 @@ import net.videofactory.new_audi.custom_view.loading_image_view.LoadingImageView
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -88,17 +88,17 @@ public class AlarmListAdapter extends BaseAdapter {
 
     static class ViewHolder {
 
-        @Bind(R.id.alarmProfile) CircleLoadingImageView profile;
+        @BindView(R.id.alarmProfile) CircleLoadingImageView profile;
 
-        @Bind(R.id.alarmName) TextView name;
+        @BindView(R.id.alarmName) TextView name;
 
-        @Bind(R.id.alarmFirstContents) TextView firstContents;
+        @BindView(R.id.alarmFirstContents) TextView firstContents;
 
-        @Bind(R.id.alarmSecondContents) TextView secondContents;
+        @BindView(R.id.alarmSecondContents) TextView secondContents;
 
-        @Bind(R.id.alarmTime) TextView time;
+        @BindView(R.id.alarmTime) TextView time;
 
-        public ViewHolder(View view) {
+        ViewHolder(View view) {
             ButterKnife.bind(this, view);
         }
     }

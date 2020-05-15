@@ -1,11 +1,10 @@
 package net.videofactory.new_audi.footer;
 
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -17,20 +16,15 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
-import com.facebook.share.model.ShareVideo;
-import com.facebook.share.model.ShareVideoContent;
-import com.facebook.share.widget.ShareDialog;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.nineoldandroids.animation.Animator;
 
 import net.videofactory.new_audi.R;
-import net.videofactory.new_audi.channel_tag.OnFollowListItemClickListener;
 import net.videofactory.new_audi.common.BackPressEditText;
 import net.videofactory.new_audi.common.Network;
 import net.videofactory.new_audi.common.ServerCommunicator;
@@ -41,7 +35,7 @@ import net.videofactory.new_audi.video.VideoInfo;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import in.srain.cube.views.ptr.PtrClassicFrameLayout;
 import in.srain.cube.views.ptr.PtrDefaultHandler;
@@ -54,18 +48,18 @@ import static android.view.View.GONE;
  * Created by Utae on 2015-10-29.
  */
 public class FooterFragment extends Fragment {
-    @Bind(R.id.footerEditText) BackPressEditText editText;
-    @Bind(R.id.footerSendButton) ImageButton sendButton;
-    @Bind(R.id.footerLikeCounter) TextView likeCounter;
-    @Bind(R.id.footerLikeButton) ImageButton likeButton;
-    @Bind(R.id.footerShareButton) ImageButton shareButton;
-    @Bind(R.id.footerReportButton) ImageButton reportButton;
-    @Bind(R.id.footerLikeInfoContainer) LinearLayout likeInfoContainer;
-    @Bind(R.id.footerCommentListRefresher) PtrClassicFrameLayout commentListRefresher;
-    @Bind(R.id.footerCommentList) ListView commentListView;
-    @Bind(R.id.footerCommentListEmptyView) ImageView commentListEmptyView;
-    @Bind(R.id.footerCommentListContainer) FrameLayout commentListContainer;
-    @Bind(R.id.footerButtonsContainer) LinearLayout buttonsContainer;
+    @BindView(R.id.footerEditText) BackPressEditText editText;
+    @BindView(R.id.footerSendButton) ImageButton sendButton;
+    @BindView(R.id.footerLikeCounter) TextView likeCounter;
+    @BindView(R.id.footerLikeButton) ImageButton likeButton;
+    @BindView(R.id.footerShareButton) ImageButton shareButton;
+    @BindView(R.id.footerReportButton) ImageButton reportButton;
+    @BindView(R.id.footerLikeInfoContainer) LinearLayout likeInfoContainer;
+    @BindView(R.id.footerCommentListRefresher) PtrClassicFrameLayout commentListRefresher;
+    @BindView(R.id.footerCommentList) ListView commentListView;
+    @BindView(R.id.footerCommentListEmptyView) ImageView commentListEmptyView;
+    @BindView(R.id.footerCommentListContainer) FrameLayout commentListContainer;
+    @BindView(R.id.footerButtonsContainer) LinearLayout buttonsContainer;
 
     private ArrayList<ItemOfComment> commentList;
 

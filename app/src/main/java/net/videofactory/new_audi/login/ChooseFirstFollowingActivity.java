@@ -3,13 +3,11 @@ package net.videofactory.new_audi.login;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.mikhaellopez.circularimageview.CircularImageView;
@@ -28,7 +26,7 @@ import net.videofactory.new_audi.setting.TutorialActivity;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -37,31 +35,31 @@ import butterknife.ButterKnife;
 
 public class ChooseFirstFollowingActivity extends AppCompatActivity{
 
-    @Bind(R.id.firstChooseTag1) Button tagButton1;
-    @Bind(R.id.firstChooseTag2) Button tagButton2;
-    @Bind(R.id.firstChooseTag3) Button tagButton3;
-    @Bind(R.id.firstChooseTag4) Button tagButton4;
+    @BindView(R.id.firstChooseTag1) Button tagButton1;
+    @BindView(R.id.firstChooseTag2) Button tagButton2;
+    @BindView(R.id.firstChooseTag3) Button tagButton3;
+    @BindView(R.id.firstChooseTag4) Button tagButton4;
     private ArrayList<Button> tagButtonList = new ArrayList<>();
 
-    @Bind(R.id.firstChooseChannelProfile1) CircleLoadingImageView channelProfile1;
-    @Bind(R.id.firstChooseChannelProfile2) CircleLoadingImageView channelProfile2;
-    @Bind(R.id.firstChooseChannelProfile3) CircleLoadingImageView channelProfile3;
-    @Bind(R.id.firstChooseChannelProfile4) CircleLoadingImageView channelProfile4;
+    @BindView(R.id.firstChooseChannelProfile1) CircleLoadingImageView channelProfile1;
+    @BindView(R.id.firstChooseChannelProfile2) CircleLoadingImageView channelProfile2;
+    @BindView(R.id.firstChooseChannelProfile3) CircleLoadingImageView channelProfile3;
+    @BindView(R.id.firstChooseChannelProfile4) CircleLoadingImageView channelProfile4;
     private ArrayList<CircleLoadingImageView> channelProfileList = new ArrayList<>();
 
-    @Bind(R.id.firstChooseChannelCheck1) CircularImageView channelCheck1;
-    @Bind(R.id.firstChooseChannelCheck2) CircularImageView channelCheck2;
-    @Bind(R.id.firstChooseChannelCheck3) CircularImageView channelCheck3;
-    @Bind(R.id.firstChooseChannelCheck4) CircularImageView channelCheck4;
+    @BindView(R.id.firstChooseChannelCheck1) CircularImageView channelCheck1;
+    @BindView(R.id.firstChooseChannelCheck2) CircularImageView channelCheck2;
+    @BindView(R.id.firstChooseChannelCheck3) CircularImageView channelCheck3;
+    @BindView(R.id.firstChooseChannelCheck4) CircularImageView channelCheck4;
     private ArrayList<CircularImageView> channelCheckList = new ArrayList<>();
 
-    @Bind(R.id.firstChooseChannelName1) TextView channelName1;
-    @Bind(R.id.firstChooseChannelName2) TextView channelName2;
-    @Bind(R.id.firstChooseChannelName3) TextView channelName3;
-    @Bind(R.id.firstChooseChannelName4) TextView channelName4;
+    @BindView(R.id.firstChooseChannelName1) TextView channelName1;
+    @BindView(R.id.firstChooseChannelName2) TextView channelName2;
+    @BindView(R.id.firstChooseChannelName3) TextView channelName3;
+    @BindView(R.id.firstChooseChannelName4) TextView channelName4;
     private ArrayList<TextView> channelNameList = new ArrayList<>();
 
-    @Bind(R.id.firstChooseNextButton) Button nextButton;
+    @BindView(R.id.firstChooseNextButton) Button nextButton;
 
     private ArrayList<String> tagNameList = new ArrayList<>();
     private ArrayList<String> channelNumList = new ArrayList<>();

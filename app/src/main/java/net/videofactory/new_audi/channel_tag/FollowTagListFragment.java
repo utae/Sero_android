@@ -1,7 +1,7 @@
 package net.videofactory.new_audi.channel_tag;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -21,7 +21,7 @@ import net.videofactory.new_audi.common.Utilities;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -36,7 +36,7 @@ public class FollowTagListFragment extends RefreshFragment {
     private FollowTagListAdapter tagListAdapter;
     private OnFollowListItemClickListener onFollowListItemClickListener;
 
-    @Bind(R.id.followList) ListView tagListView;
+    @BindView(R.id.followList) ListView tagListView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

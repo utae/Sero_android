@@ -1,21 +1,16 @@
 package net.videofactory.new_audi;
 
 import android.os.Bundle;
-import android.provider.Settings;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
 import com.fasterxml.jackson.databind.JsonNode;
 
-import net.videofactory.new_audi.R;
 import net.videofactory.new_audi.common.Network;
 import net.videofactory.new_audi.common.ServerCommunicator;
-import net.videofactory.new_audi.common.UserInfo;
 import net.videofactory.new_audi.common.Utilities;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * Created by Utae on 2015-10-29.

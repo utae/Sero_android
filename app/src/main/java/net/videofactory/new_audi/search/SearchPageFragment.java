@@ -1,8 +1,8 @@
 package net.videofactory.new_audi.search;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +22,7 @@ import net.videofactory.new_audi.custom_view.horizontal_list_view.HorizontalList
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -46,15 +46,15 @@ public class SearchPageFragment extends RefreshFragment {
 
     private TextView.OnEditorActionListener onSearchActionListener;
 
-    @Bind(R.id.searchTextInput) EditText searchTextInput;
+    @BindView(R.id.searchTextInput) EditText searchTextInput;
 
-    @Bind(R.id.searchBannerPager) ViewPager bannerPager;
+    @BindView(R.id.searchBannerPager) ViewPager bannerPager;
 
-    @Bind(R.id.searchChannelListView) HorizontalListView channelListView;
+    @BindView(R.id.searchChannelListView) HorizontalListView channelListView;
 
-    @Bind(R.id.searchTagListView) HorizontalListView tagListView;
+    @BindView(R.id.searchTagListView) HorizontalListView tagListView;
 
-    @Bind(R.id.searchBannerPagerIndicator) FlycoPageIndicaor bannerPagerIndicator;
+    @BindView(R.id.searchBannerPagerIndicator) FlycoPageIndicaor bannerPagerIndicator;
 
     @Nullable
     @Override

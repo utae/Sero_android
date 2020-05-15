@@ -1,8 +1,8 @@
 package net.videofactory.new_audi.camera_upload;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import net.videofactory.new_audi.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -18,7 +18,7 @@ import butterknife.ButterKnife;
  */
 public class MusicPanelFragment extends Fragment{
 
-    @Bind(R.id.musicSelectTextView) TextView musicSelectTextView;
+    @BindView(R.id.musicSelectTextView) TextView musicSelectTextView;
 
     @Nullable
     @Override

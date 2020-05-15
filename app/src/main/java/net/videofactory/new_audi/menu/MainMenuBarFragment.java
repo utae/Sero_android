@@ -1,9 +1,9 @@
 package net.videofactory.new_audi.menu;
 
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.IdRes;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 import net.videofactory.new_audi.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -25,11 +25,11 @@ public class MainMenuBarFragment extends Fragment {
 
     private OnClickListener onClickListener;
 
-    @Bind(R.id.menuHome) ImageView homeMenu;
-    @Bind(R.id.menuSearch) ImageView searchMenu;
-    @Bind(R.id.menuUpload) ImageView uploadMenu;
-    @Bind(R.id.menuAlarm) ImageView alarmMenu;
-    @Bind(R.id.menuMypage) ImageView mypageMenu;
+    @BindView(R.id.menuHome) ImageView homeMenu;
+    @BindView(R.id.menuSearch) ImageView searchMenu;
+    @BindView(R.id.menuUpload) ImageView uploadMenu;
+    @BindView(R.id.menuAlarm) ImageView alarmMenu;
+    @BindView(R.id.menuMypage) ImageView mypageMenu;
 
 
     @Nullable

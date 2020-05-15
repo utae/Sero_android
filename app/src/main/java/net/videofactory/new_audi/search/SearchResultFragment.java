@@ -1,8 +1,8 @@
 package net.videofactory.new_audi.search;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,7 +20,7 @@ import net.videofactory.new_audi.common.Utilities;
 import net.videofactory.new_audi.home.OnCardClickListener;
 import net.videofactory.new_audi.main.OnBackButtonClickListener;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -33,11 +33,11 @@ public class SearchResultFragment extends RefreshFragment {
     private OnCardClickListener onCardClickListener;
     private OnBackButtonClickListener onBackButtonClickListener;
 
-    @Bind(R.id.searchResultEditText) EditText searchEditText;
-    @Bind(R.id.searchResultSearchButton) ImageButton searchButton;
-    @Bind(R.id.searchResultViewPager) ViewPager resultViewPager;
-    @Bind(R.id.searchResultViewPagerTab) SmartTabLayout resultViewPagerTab;
-    @Bind(R.id.searchResultBackButton) ImageButton backButton;
+    @BindView(R.id.searchResultEditText) EditText searchEditText;
+    @BindView(R.id.searchResultSearchButton) ImageButton searchButton;
+    @BindView(R.id.searchResultViewPager) ViewPager resultViewPager;
+    @BindView(R.id.searchResultViewPagerTab) SmartTabLayout resultViewPagerTab;
+    @BindView(R.id.searchResultBackButton) ImageButton backButton;
 
     public static SearchResultFragment create(String word){
         SearchResultFragment searchResultFragment = new SearchResultFragment();

@@ -1,7 +1,7 @@
 package net.videofactory.new_audi.setting;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,18 +9,19 @@ import android.widget.ImageView;
 
 import net.videofactory.new_audi.R;
 
-import butterknife.Bind;
+import androidx.fragment.app.Fragment;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
  * Created by Utae on 2016-08-31.
  */
 
-public class TutorialImgFragment extends android.support.v4.app.Fragment {
+public class TutorialImgFragment extends Fragment {
 
     private int position;
 
-    @Bind(R.id.tutorialPageImageView) ImageView imageView;
+    @BindView(R.id.tutorialPageImageView) ImageView imageView;
 
     private View.OnClickListener onClickListener;
 

@@ -3,7 +3,7 @@ package net.videofactory.new_audi.login;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -23,7 +23,7 @@ import net.videofactory.new_audi.common.UserInfo;
 import net.videofactory.new_audi.common.Utilities;
 import net.videofactory.new_audi.main.MainActivity;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -31,15 +31,15 @@ import butterknife.ButterKnife;
  */
 public class FbSignupFormActivity extends AppCompatActivity {
 
-    @Bind(R.id.fbSignupFormContainer) LinearLayout formContainer;
-    @Bind(R.id.fbSignupInputId) EditText fbInputId;
-    @Bind(R.id.fbSignupInputEmail) EditText fbInputEmail;
-    @Bind(R.id.fbSignupInputIdContainer) LinearLayout inputIdContainer;
-    @Bind(R.id.fbSignupInputEmailContainer) LinearLayout inputEmailContainer;
-    @Bind(R.id.fbSignupIdStatusButton) ImageButton idStatusButton;
-    @Bind(R.id.fbSignupEmailStatusButton) ImageButton emailStatusButton;
-    @Bind(R.id.fbSignupButton) Button fbSignupButton;
-    @Bind(R.id.fbSignupBackButton) ImageButton backButton;
+    @BindView(R.id.fbSignupFormContainer) LinearLayout formContainer;
+    @BindView(R.id.fbSignupInputId) EditText fbInputId;
+    @BindView(R.id.fbSignupInputEmail) EditText fbInputEmail;
+    @BindView(R.id.fbSignupInputIdContainer) LinearLayout inputIdContainer;
+    @BindView(R.id.fbSignupInputEmailContainer) LinearLayout inputEmailContainer;
+    @BindView(R.id.fbSignupIdStatusButton) ImageButton idStatusButton;
+    @BindView(R.id.fbSignupEmailStatusButton) ImageButton emailStatusButton;
+    @BindView(R.id.fbSignupButton) Button fbSignupButton;
+    @BindView(R.id.fbSignupBackButton) ImageButton backButton;
 
     private String name, gender, birth, fbId, fbToken, id, email = null;
 

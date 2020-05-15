@@ -1,7 +1,7 @@
 package net.videofactory.new_audi.channel_tag;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -22,7 +22,7 @@ import net.videofactory.new_audi.common.Utilities;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -38,8 +38,8 @@ public class FollowChannelListFragment extends RefreshFragment {
     private FollowChannelListAdapter channelListAdapter;
     private OnFollowListItemClickListener onFollowListItemClickListener;
 
-    @Bind(R.id.followList) ListView channelListView;
-    @Bind(R.id.followListEmptyView) TextView channelListEmptyView;
+    @BindView(R.id.followList) ListView channelListView;
+    @BindView(R.id.followListEmptyView) TextView channelListEmptyView;
 
     public static FollowChannelListFragment create(int type){
         FollowChannelListFragment followChannelListFragment = new FollowChannelListFragment();

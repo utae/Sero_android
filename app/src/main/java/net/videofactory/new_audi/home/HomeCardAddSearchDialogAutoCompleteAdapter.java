@@ -19,7 +19,7 @@ import net.videofactory.new_audi.custom_view.loading_image_view.LoadingImageView
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -110,8 +110,8 @@ public class HomeCardAddSearchDialogAutoCompleteAdapter extends BaseAdapter impl
 
     static class ViewHolder {
 
-        @Bind(R.id.homeCardAddDialogSearchListProfile) CircleLoadingImageView profile;
-        @Bind(R.id.homeCardAddDialogSearchListName) TextView name;
+        @BindView(R.id.homeCardAddDialogSearchListProfile) CircleLoadingImageView profile;
+        @BindView(R.id.homeCardAddDialogSearchListName) TextView name;
 
         public ViewHolder(View view) {
             ButterKnife.bind(this, view);

@@ -5,42 +5,34 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.SurfaceTexture;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.hardware.Camera;
 import android.media.CamcorderProfile;
 import android.media.MediaRecorder;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.TextureView;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import net.videofactory.new_audi.R;
 import net.videofactory.new_audi.common.Utilities;
-import net.videofactory.new_audi.main.MainActivity;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -48,17 +40,17 @@ import butterknife.ButterKnife;
  */
 public class CameraActivity extends AppCompatActivity implements TextureView.SurfaceTextureListener {
 
-    @Bind(R.id.cameraTextureView) TextureView cameraTextureView;
-    @Bind(R.id.cameraRecordingButton) ImageButton recordingButton;
-    @Bind(R.id.cameraGalleryButton) ImageButton galleryButton;
-    @Bind(R.id.cameraTransitionButton) ImageButton transitionButton;
-    @Bind(R.id.cameraFlashButton) ImageButton flashButton;
-    @Bind(R.id.cameraDeleteButton) ImageButton deleteButton;
-    @Bind(R.id.cameraEditButton) TextView editButton;
-    @Bind(R.id.cameraClipContainer) LinearLayout clipContainer;
-    @Bind(R.id.cameraRecordDuration) TextView recordDurationTextView;
-    @Bind(R.id.cameraProgressBar) ProgressBar cameraProgressBar;
-    @Bind(R.id.cameraCancelButton) TextView cancelButton;
+    @BindView(R.id.cameraTextureView) TextureView cameraTextureView;
+    @BindView(R.id.cameraRecordingButton) ImageButton recordingButton;
+    @BindView(R.id.cameraGalleryButton) ImageButton galleryButton;
+    @BindView(R.id.cameraTransitionButton) ImageButton transitionButton;
+    @BindView(R.id.cameraFlashButton) ImageButton flashButton;
+    @BindView(R.id.cameraDeleteButton) ImageButton deleteButton;
+    @BindView(R.id.cameraEditButton) TextView editButton;
+    @BindView(R.id.cameraClipContainer) LinearLayout clipContainer;
+    @BindView(R.id.cameraRecordDuration) TextView recordDurationTextView;
+    @BindView(R.id.cameraProgressBar) ProgressBar cameraProgressBar;
+    @BindView(R.id.cameraCancelButton) TextView cancelButton;
 
     private Camera camera;
     private Camera.Parameters cameraParameters;

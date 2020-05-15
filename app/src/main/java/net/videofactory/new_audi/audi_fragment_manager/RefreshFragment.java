@@ -1,6 +1,6 @@
 package net.videofactory.new_audi.audi_fragment_manager;
 
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 /**
  * Created by Utae on 2016-09-07.

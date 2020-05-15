@@ -1,14 +1,12 @@
 package net.videofactory.new_audi.camera_upload;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.VideoView;
 
 import net.videofactory.new_audi.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -26,7 +24,7 @@ public class VideoEditActivity extends AppCompatActivity implements VideoEditCon
 
     private boolean isMusic;
 
-    @Bind(R.id.editVideoView) VideoView editVideoView;
+    @BindView(R.id.editVideoView) VideoView editVideoView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -2,16 +2,14 @@ package net.videofactory.new_audi.home;
 
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.MultiAutoCompleteTextView;
@@ -28,7 +26,7 @@ import net.videofactory.new_audi.common.Utilities;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -46,11 +44,11 @@ public class HomeCardAddSearchDialog extends DialogFragment {
 
     private OnCardSelectListener onCardSelectListener;
 
-    @Bind(R.id.homeCardAddDialogSearchTitle) TextView title;
-    @Bind(R.id.homeCardAddDialogSearchComment) TextView comment;
-    @Bind(R.id.homeCardAddDialogSearchEditText) MultiAutoCompleteTextView editText;
-    @Bind(R.id.homeCardAddDialogSearchClose) ImageButton closeButton;
-    @Bind(R.id.homeCardAddDialogSearchList) ListView followedListView;
+    @BindView(R.id.homeCardAddDialogSearchTitle) TextView title;
+    @BindView(R.id.homeCardAddDialogSearchComment) TextView comment;
+    @BindView(R.id.homeCardAddDialogSearchEditText) MultiAutoCompleteTextView editText;
+    @BindView(R.id.homeCardAddDialogSearchClose) ImageButton closeButton;
+    @BindView(R.id.homeCardAddDialogSearchList) ListView followedListView;
 
     public static HomeCardAddSearchDialog create(int type){
         HomeCardAddSearchDialog homeCardAddSearchDialog = new HomeCardAddSearchDialog();

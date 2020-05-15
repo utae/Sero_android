@@ -1,7 +1,7 @@
 package net.videofactory.new_audi.home;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -26,7 +26,7 @@ import net.videofactory.new_audi.video.VideoThumbnailListAdapter;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import in.srain.cube.views.GridViewWithHeaderAndFooter;
 
@@ -37,9 +37,9 @@ public class HomeCardVideoListFragment extends RefreshFragment {
 
     private String title, cardType;
 
-    @Bind(R.id.homeCardVideoListTitle) TextView titleView;
-    @Bind(R.id.homeCardVideoList) GridViewWithHeaderAndFooter thumbnailList;
-    @Bind(R.id.homeCardVideoListBackButton) ImageButton backButton;
+    @BindView(R.id.homeCardVideoListTitle) TextView titleView;
+    @BindView(R.id.homeCardVideoList) GridViewWithHeaderAndFooter thumbnailList;
+    @BindView(R.id.homeCardVideoListBackButton) ImageButton backButton;
 
     private VideoThumbnailListAdapter thumbnailListAdapter;
 
