@@ -18,9 +18,9 @@ Sero는
 
 #Screenshot
 
-![login](./img/login.png width="300")
-![home](./img/home.png width="300")
-![search](./img/search.png width="300")
-![video](./img/video.png width="300")
-![comment](./img/comment.png width="300")
+<img src="./img/login.png"  width="300">
+<img src="./img/home.png"  width="300">
+<img src="./img/search.png"  width="300">
+<img src="./img/video.png"  width="300">
+<img src="./img/comment.png"  width="300">
 
