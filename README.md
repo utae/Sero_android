@@ -16,7 +16,7 @@ Sero는
 
 과 같은 기능들도 포함되어 있습니다.
 
-#Screenshot
+# Screenshot
 
 <img src="./img/login.png"  width="300">
 <img src="./img/home.png"  width="300">
